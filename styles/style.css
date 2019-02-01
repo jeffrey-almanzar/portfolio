@@ -1,3 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     scroll-behavior:smooth;
 }
+
+body{
+    display:flex;
+}
+
+/* HEADER */
+#header{
+    width: 25%;
+    height: 100vh;
+}
+
+#header-content{
+    position: fixed;
+    width: 25%;
+    z-index: 1000;
+
+}
+
+#me{
+    max-width: 100%;
+}
+
+/* MAIN CONTENT */
+
+main{
+    width: 75%;
+    margin-left: 50px;
+}
+
+#welcome{
+    height: 100vh;
+    position: relative;
+}
+
+#welcome img{
+    max-width:100%;
+    top: 0;
+}
+
+#title{
+    position: absolute;
+    
+}
+
+#title-description{
+    position: absolute;
+}
+
+
