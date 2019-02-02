@@ -76,6 +76,8 @@ main{
     margin-left: 0px;
 }
 
+/* WELCOME */
+
 #welcome{
     height: 100vh;
     position: relative;
@@ -96,7 +98,7 @@ main{
 
 #title{
     position: absolute;
-    left: 32%;
+    left: 40%;
     top: 38%;
     color: #fff;
     text-shadow: 2px 1px 5px #000;
@@ -122,6 +124,10 @@ main{
     padding: 100px 0px;
     width: 75%;
     margin: auto;
+}
+
+#about-content p{
+    font-size: 20px;
 }
 
 /* PROJECTS */
