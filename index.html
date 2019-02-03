@@ -7,65 +7,67 @@
     </head>
 
     <body>
-        <header id="header">
-
-            <div id="header-content">
-
-                <div id="resume-div">
-                    <img id ="me" src="img/me.jpg" alt="photo of me">
-                    <a id="resume" href="#" target="_blank">RESUME</a>
-                </div>
-                
-                <div>
+        <header>
+            <nav>
                     <ul>
-                        <li><a href="#welcome">welcome</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects-skills">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
+            </nav>
 
-            </div>
-
+        <div id="welcome">
+            <h1 id="title">Welcome!</h1>
+            <p id="title-description"> I'm a front-end web developer and computer Science student.</p>
+        </div>
+        
         </header>
 
-        <main>
-            
-            <div id="welcome">
 
-                <h1 id="title">Welcome!</h1>
-                <p id="title-description"> I'm a front-end web developer and computer Science student.</p>
-                <div class="overlay"></div>
-                <img src="img/slides1.jpeg" alt="">
-            </div>
+        <main>
 
             <div id="about">
-                <div id="about-content">
-                    <p>Hello, my name is Jeffrey Almanzar, I'm an easygoing person who can get along with anyone and loves
-                        working with others. I completed an associate's degree in computer science at Bronx Comunity College on
-                        December 2018, and I am currently pursing a bachelor's degree at Lehman College. Outside of school, 
-                        I'm always learning new technologies, especially in the web development's field.
+                <div id="about-main-div">
+                    <div id="resume-div">
+                        <img id ="me" src="img/me.jpg" alt="photo of me">
+                        <a id="resume" href="#" target="_blank">RESUME</a>
+                    </div>
 
-                    </p>
+                    <div id="about-content">
+                        <p>Hello, my name is Jeffrey Almanzar, I'm an easygoing person who can get along with anyone and loves
+                            working with others. I completed an associate's degree in computer science at Bronx Comunity College on
+                            December 2018, and I am currently pursing a bachelor's degree at Lehman College. Outside of school, 
+                            I'm always learning new technologies, especially in the web development's field.
+
+                        </p>
+                    </div>
                 </div>
-
             </div>
 
             <div id="projects-skills">
 
-                <p>Three projects here.</p>
+                <div id="project1">
+                    <h2>Project 1</h2>
+                    <img class="project-imgs" src="img/projects-imgs/fastd.JPG" alt="">
+                </div>
+
+                <div id="project2">
+                    <h2>Project 2</h2>
+                    <img class="project-imgs" src="img/projects-imgs/todo.JPG" alt="">
+                </div>
 
             </div>
 
             <div id="contact">
+                <a href="mailTo:almanzarortizjeffrey@gmail.com">GET IN TOUCH!</a>
 
             </div>
 
         </main>
 
-        <!-- <footer>
+        <footer>
             <p>&copy;created by Jeffrey Almanzar</p>
-        </footer> -->
+        </footer>
         <script src="js/script.js"></script>
     </body>
 </html>
