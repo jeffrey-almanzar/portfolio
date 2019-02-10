@@ -16,7 +16,7 @@ header{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: #00b894;
+    background-color: #55efc4;
   
     
 }
@@ -26,6 +26,7 @@ header ul{
     position: absolute;
     right: 0;
     top: 0;
+    margin-right: 10px;
 }
 
 header ul li{
@@ -33,24 +34,42 @@ header ul li{
     padding: 20px;
 }
 
-header a{
+header nav a{
     text-decoration:none;
     color: black;
     padding: 5px;
     border-radius: 4px;
+    text-decoration: underline;
 }
 
-header a:hover{
+header nav a:hover{
+    text-decoration: none;
     background-color: #fff;
 }
+
+
 #welcome{
     clear: left;
     text-align: center;
     padding-top: 20%;
-    
-   
+     
+}
+#welcome p{
+    font-size: 20px;
 }
 
+.social-img{
+    margin-top: 10px;
+    
+}
+
+#linkdin{
+    
+}
+
+.social-img:hover{
+    transform: rotate(5deg);
+}
 #about{
     width: 100%;
     padding: 100px 0;
@@ -85,7 +104,17 @@ header a:hover{
 #resume{
     text-decoration:none;
     margin-top: 10px;
-    color: black;
+    color: #000;
+    font-weight: bold;
+    border:2px solid #55efc4;
+    background-color: #55efc4;
+    padding:5px;
+    border-radius: 5px;
+
+}
+
+#resume:hover{
+    background-color:#fff;
 }
 #projects-skills{
     clear: left;
