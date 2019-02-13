@@ -82,24 +82,27 @@ header nav a:hover{
     margin: auto;
 
 }
-#about-content{
-    font-size: 20px;
-    padding-top: 50px;
-    text-align: justify;
-}
-
 #resume-div{
     float:left;
     width: 25%;
     text-align: center;
-    
 }
+
+#about-content{
+    font-size: 20px;
+    padding-top: 50px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
 
 
  
 #me{
     display: block;
     max-width: 50%;
+    min-width: 50%;
     margin: 10px auto;
     border: 3px solid #55efc4;
     border-radius: 50%;
