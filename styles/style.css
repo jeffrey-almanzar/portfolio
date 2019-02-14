@@ -132,56 +132,9 @@ header nav a:hover{
 #resume:hover{
     background-color:#fff;
 }
-#projects-skills{
-    clear: left;
-    margin-top: 60px;
-    background-color: #55efc4;
-    padding-bottom: 50px;
-}
-
-#projects-skills h2{
-    text-align: center;
-    padding: 50px 0px;
-}
-
-
-.projects{
-    margin-bottom: 45px;
-    width: 100%;
-}
 
 
 
-.technologies-used{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.project-img{
-    width: 70%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
-}
-
-#project1-img{
-    background-image: url("../img/projects-imgs/fastd.JPG");
-    background-size: cover;
-    background-position: center;
-}
-
-#project2-img{
-    background-image: url("../img/projects-imgs/todo.JPG");
-    background-size: cover;
-    background-position: center;
-}
-
-.pro-links{
-    padding:0px 5px;
-    text-decoration: none;
-}
 #contact{
     text-align: center;
     margin: 150px auto;
