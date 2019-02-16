@@ -97,3 +97,7 @@ span{
   background-image: linear-gradient(#1565C0,#FFFF00);
   font-weight: 600;
 }
+
+.pro-links-img:hover{
+  transform: rotate(15deg);
+}

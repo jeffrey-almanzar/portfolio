@@ -12,6 +12,8 @@ body{
     font-family:helvetica;
     
 }
+
+/* HEADING SECTION */
 .heading{
     font-weight: 700;
 }
@@ -50,7 +52,7 @@ header nav a:hover{
     background-color: #fff;
 }
 
-
+/* WELCOME SECTION */
 #welcome{
     clear: left;
     text-align: center;
@@ -66,13 +68,12 @@ header nav a:hover{
     
 }
 
-#linkdin{
-    
-}
-
 .social-img:hover{
     transform: rotate(5deg);
 }
+
+
+/* ABOUT SECTION */
 #about{
     width: 100%;
     padding: 100px 0;
@@ -134,7 +135,7 @@ header nav a:hover{
 }
 
 
-
+/* CONTACT SECTION */
 #contact{
     text-align: center;
     margin: 150px auto;
@@ -155,6 +156,7 @@ header nav a:hover{
     background-color:#fff;
 }
 
+/* FOOTER */
 footer{
     text-align: center;
     background-color: #55efc4;
