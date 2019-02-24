@@ -60,7 +60,7 @@ header nav a:hover{
      
 }
 #welcome p{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .social-img{
@@ -91,7 +91,7 @@ header nav a:hover{
 }
 
 #about-content{
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-top: 15px;
     text-align: justify;
     line-height: 1.5;
@@ -144,7 +144,7 @@ header nav a:hover{
 #contact a{
     text-decoration:none;
     color:black;
-    font-size: 30px;
+    font-size: 1.875rem;
     border: 2px solid #55efc4;
     padding: 10px;
     border-radius: 5px;
@@ -181,4 +181,39 @@ footer p{
         margin: auto;
         width: 90%;
     }
+
+    #welcome{
+        padding-top: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+    }
+    #welcome{
+        padding-top: 50%;
+    }
+    #about-content{
+        text-align: left;
+    }
+
+    #resume-div{
+        width: 100%;
+    }
+    .coding-tool{
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    
+    header ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    
+
 }
