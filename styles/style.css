@@ -28,14 +28,13 @@ header{
 
 header ul{
     list-style-type: none;
-    position: absolute;
-    right: 0;
-    top: 0;
     margin-right: 10px;
+    display: flex;
+    background-color: #55efc4;
+
 }
 
 header ul li{
-    float: left;
     padding: 20px;
 }
 
@@ -50,6 +49,20 @@ header nav a{
 header nav a:hover{
     text-decoration: none;
     background-color: #fff;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #55efc4;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu{
+    display: none;
 }
 
 /* WELCOME SECTION */
@@ -207,12 +220,21 @@ footer p{
         text-align: center;
     }
 
-    
-    header ul{
+    nav {
         display: flex;
-        justify-content: center;
-        width: 100%;
+        justify-content: flex-end;
     }
+
+    #menu{
+        display: block;
+        margin-right: 10px;
+        padding: 10px 0;
+    }
+    header ul{
+        display: none;
+    }
+
+    
 
     
 
