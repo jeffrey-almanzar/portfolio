@@ -63,6 +63,10 @@ nav{
 
 #menu{
     display: none;
+    background-color: #55efc4;
+    text-decoration: none;
+    border: none;
+    outline-color: #55efc4;
 }
 
 /* WELCOME SECTION */
