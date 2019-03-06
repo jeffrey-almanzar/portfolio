@@ -41,22 +41,29 @@
   
 }
 
-#project1{
-  background-image: url("../img/projects-imgs/todo.JPG");
+.project-img{
   background-size: cover;
   background-position: top;
+}
+#project1{
+  background-image: url("../img/projects-imgs/paradise.JPG");
+  background-position: center;
+ 
 }
 
 #project2{
-  background-image: url("../img/projects-imgs/loyaltyFitness.JPG");
-  background-size: cover;
-  background-position: top;
+  background-image: url("../img/projects-imgs/todo.JPG");
+  
 }
 
 #project3{
+  background-image: url("../img/projects-imgs/loyaltyFitness.JPG");
+  background-position: center;
+}
+
+#project4{
   background-image: url("../img/projects-imgs/euler.JPG");
-  background-size: cover;
-  background-position: top;
+  
 }
 
 .pro-links-img{
