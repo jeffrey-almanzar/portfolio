@@ -1,13 +1,13 @@
-// var nav = $('.navbar');
-// var projects;
 
-// $(document).ready(function(){
 
-//     $($('.navbar')[0]).on('activate.bs.scrollspy',function(){
-//         var li = $(" .navbar li.active > a ").text();
-//         if(li =="About"){
-//             alert("Hi hello");
-//         }
-//     });
+window.sr = ScrollReveal();
 
-// });
+sr.reveal('.navbar', {
+    duration:1000,
+    origin:'bottom'
+});
+
+sr.reveal('#about', {
+    duration:3000,
+    origin:'bottom'
+});
