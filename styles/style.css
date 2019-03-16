@@ -4,13 +4,14 @@
 }
 
 
+
 html{
     scroll-behavior:smooth;
 }
 
 body{
     font-family:helvetica;
-    
+    position: relative;
 }
 
 /* HEADING SECTION */
@@ -25,56 +26,12 @@ header{
     background-color: #55efc4;
     
 }
-
-header ul{
-    list-style-type: none;
-    margin-right: 10px;
-    display: flex;
+.navbar{
     background-color: #55efc4;
-
+    color: #000;
 }
 
-header ul li{
-    padding: 20px;
-}
 
-header nav a{
-    text-decoration:none;
-    color: black;
-    padding: 5px;
-    border-radius: 4px;
-    text-decoration: underline;
-}
-
-header nav a:hover{
-    text-decoration: none;
-    background-color: #fff;
-}
-
-nav{
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    background-color: #55efc4;
-    top: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#menu{
-    display: none;
-    background-color: #55efc4;
-    text-decoration: none;
-    border: none;
-    /* outline-color: #55efc4; */
-    outline: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.menuOpen{
-    background-color: #fff;
-}
 
 /* WELCOME SECTION */
 #welcome{
@@ -181,14 +138,16 @@ nav{
 }
 
 /* FOOTER */
+footer p{
+    padding: 20px 0;
+    margin-bottom: 0;
+}
 footer{
     text-align: center;
     background-color: #55efc4;
 }
 
-footer p{
-    padding: 20px 0;
-}
+
 
 @media (max-width: 768px) { 
 
@@ -231,19 +190,19 @@ footer p{
         text-align: center;
     }
 
-    nav {
+    /* nav {
         display: flex;
-        justify-content: flex-end;
-    }
+      nav  justify-content: flex-end;
+    } */
 
     #menu{
         display: block;
         margin-right: 10px;
         padding: 10px 0;
     }
-    header ul{
+    /* header ul{
         display: none;
-    }
+    } */
 
     
 
