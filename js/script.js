@@ -14,7 +14,7 @@ sr.reveal('#welcome', {
 });
 
 sr.reveal('#about', {
-    duration:2000,
+    duration:2500,
     origin:'bottom'
 });
 
