@@ -35,7 +35,7 @@ header{
 
 /* WELCOME SECTION */
 #welcome{
-    clear: left;
+    /* clear: left; */
     text-align: center;
     padding-top: 20%;
      
@@ -178,7 +178,7 @@ footer{
         padding-top: 50%;
     }
     #about-content{
-        text-align: left;
+        text-align: center;
     }
 
     #resume-div{
@@ -190,19 +190,14 @@ footer{
         text-align: center;
     }
 
-    /* nav {
-        display: flex;
-      nav  justify-content: flex-end;
-    } */
+    
 
     #menu{
         display: block;
         margin-right: 10px;
         padding: 10px 0;
     }
-    /* header ul{
-        display: none;
-    } */
+   
 
     
 
