@@ -9,7 +9,7 @@ sr.reveal('.navbar', {
 
 sr.reveal('#welcome', {
     duration:2000,
-    origin:'bottom',
+    origin:'top',
     distance:"300px"
 });
 
