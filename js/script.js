@@ -13,6 +13,15 @@ $(document).ready(function(){
         distance:"300px"
     });
 
+    //Type js
+    var typed = new Typed("#title-description", {
+        strings: ["I'm a front-end web developer and computer science student."],
+        typeSpeed: 60,
+        showCursor:false,
+        startDelay:1000,
+        loop:true
+    });
+
     sr.reveal('#about', {
         duration:2500,
         origin:'bottom'
@@ -42,11 +51,5 @@ $(document).ready(function(){
         distance:'50px'
     });
 
-    var typed = new Typed("#title-description", {
-        strings: ["I'm a front-end web developer and computer science student."],
-        typeSpeed: 60,
-        showCursor:false,
-        startDelay:1000,
-        loop:true
-    });
+   
 });
