@@ -15,6 +15,13 @@ body{
 }
 
 /* HEADING SECTION */
+.active{
+    text-decoration: underline;
+}
+
+header .nav-link:hover{
+    text-decoration: underline;
+}
 
 .heading{
     font-weight: 700;
