@@ -40,8 +40,12 @@ header{
     padding-top: 20%;
      
 }
+#title{
+    font-weight: 600;
+}
 #welcome p{
     font-size: 1.25rem;
+    font-weight: 400;
 }
 
 .social-img{
