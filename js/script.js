@@ -2,23 +2,19 @@
 $(document).ready(function(){
     window.sr = ScrollReveal();
 
-    sr.reveal('.navbar', {
-        duration:2000,
-        origin:'bottom'
+    sr.reveal('#welcome', {
+        duration:1500,
+        origin:'top',
+        distance:'200px'
     });
 
-    sr.reveal('#welcome', {
-        duration:2000,
-        origin:'top',
-        distance:"300px"
-    });
 
     //Type js
     var typed = new Typed("#title-description", {
         strings: ["I'm a front-end web developer and computer science student."],
         typeSpeed: 60,
         showCursor:false,
-        startDelay:1000,
+        startDelay:100,
         loop:true
     });
 
