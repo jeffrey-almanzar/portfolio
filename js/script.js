@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     //Type js
     var typed = new Typed("#title-description", {
-        strings: ["I'm a front-end web developer and computer science student."],
+        strings: ["Full-stack software engineer aspirant and computer science tutor."],
         typeSpeed: 60,
         showCursor:false,
         startDelay:100,
