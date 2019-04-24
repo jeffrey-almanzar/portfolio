@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     //Type js
     var typed = new Typed("#title-description", {
-        strings: ["Full-stack software engineer aspirant and computer science tutor."],
+        strings: ["Software engineer and computer science tutor."],
         typeSpeed: 60,
         showCursor:false,
         startDelay:100,
