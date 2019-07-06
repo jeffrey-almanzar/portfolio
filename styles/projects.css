@@ -1,6 +1,6 @@
 #projects-skills{
   clear: left;
-  margin-top: 60px;
+  margin-top: 0px;
   background-color: #55efc4;
   padding-bottom: 50px;
 }
@@ -110,23 +110,28 @@ span{
   font-weight: bold;
   background-color: #000000;
 }
-/* .html{
-  background-color: #E65100;
-}
 
-.css{
-  background-color: #1565C0;
-}
-
-.js{
-  background-color: #FFFF00;
-  color: #000;
-}
-.python{
-  background-image: linear-gradient(#1565C0,#FFFF00);
-  font-weight: 600;
-} */
 
 .pro-links-img:hover{
   transform: rotate(15deg);
+}
+
+@media(max-width: 800px){
+  .projects{
+    width: 95%;
+  }
+
+  .projects span{
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .pro-tools-container{
+    width: 70%;
+  }
+
+  .pro-links-container{
+    width: 30%;
+  }
+  
 }
