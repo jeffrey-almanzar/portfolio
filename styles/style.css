@@ -76,33 +76,61 @@ header{
     width: 100%;
     padding: 100px 0;
 }
-#about-main-div{
+.about-main-div{
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
-#resume-div{
-    float:left;
-    width: 25%;
+
+.about-skills-wrapper{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.resume-div{
+    /* float:left; */
+    /* width: 25%; */
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 3rem;
 }
 
-#about-content{
+.description-text{
     font-size: 1.25rem;
-    padding-top: 15px;
-    text-align: justify;
     line-height: 1.5;
-    float: right;
-    width: 75%;
 }
 
+.about-content{
+   
+    padding: 1rem 1.5rem 0px;
+    text-align: justify; 
+    flex: 1;
+    
+}
 
+.skills-section{
+    flex: 1;
+    padding: 1rem 1.5rem 0px; 
+}
+
+.center{
+    text-align: center;
+}
+
+.section-sub-heading{
+    text-align:center;
+    margin-bottom: 15px;
+   
+}
+/* 
 .group:after{
     content: "";
     display: table;
     clear: both;
-}
+} */
 
  
 #me{
@@ -168,19 +196,19 @@ footer{
 
 @media (max-width: 768px) { 
 
-    #about-main-div{
+    /* .about-main-div{
         display: flex;
         flex-direction: column;
-    }
+    } */
 
-    #resume-div{
+    .resume-div{
         margin: auto;
     }
 
-    #about-content{
+    /* #about-content{
         margin: auto;
         width: 90%;
-    }
+    } */
 
     #welcome{
         padding-top: 40%;
@@ -194,11 +222,11 @@ footer{
     #welcome{
         padding-top: 50%;
     }
-    #about-content{
+    /* #about-content{
         text-align: center;
-    }
+    } */
 
-    #resume-div{
+    .resume-div{
         width: 100%;
     }
     
