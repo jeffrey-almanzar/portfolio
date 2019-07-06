@@ -105,7 +105,12 @@ span{
   padding: 5px;
   border-radius: 5px;
 }
-.html{
+
+.coding-tool{
+  font-weight: bold;
+  background-color: #000000;
+}
+/* .html{
   background-color: #E65100;
 }
 
@@ -120,7 +125,7 @@ span{
 .python{
   background-image: linear-gradient(#1565C0,#FFFF00);
   font-weight: 600;
-}
+} */
 
 .pro-links-img:hover{
   transform: rotate(15deg);
