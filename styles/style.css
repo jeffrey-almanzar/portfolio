@@ -92,10 +92,9 @@ header{
 /* ABOUT SECTION */
 #about{
     width: 100%;
-    padding: 100px 0 ;
+    padding: 100px 0 150px;
 }
 .about-main-div{
-    /* width: 90%; */
     margin: auto;
     display: flex;
     justify-content: center;
@@ -105,9 +104,10 @@ header{
 
 .about-skills-wrapper{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 #about .coding-tool{
     background-color: #55efc4;
@@ -117,7 +117,7 @@ header{
 .resume-div{
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 .description-text{
@@ -127,19 +127,21 @@ header{
 
 .about-skills-container{
     margin-bottom: 1rem;
+   
 }
 
 .about-content{
     padding: 1rem 1.5rem;
-    text-align: justify; 
-    flex: 1;
-    background-color: #c7ffef;
-    
+    text-align:center; 
+    width: 40%;
+    border-radius: 0.5rem;
+    background-color: #a6ffe6;
     
 }
 
 .skills-section{
-    flex: 1;
+    width: 40%;
+    border-radius: 0.5rem;
     padding: 1rem 1.5rem; 
     text-align: center;
     background-color: #a6ffe6;
@@ -152,7 +154,7 @@ header{
 .section-sub-heading{
     text-align:center;
     margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: 700;
    
 }
 
@@ -165,8 +167,8 @@ header{
  
 #me{
     display: block;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 225px;
+    max-height: 225px;
     margin: 10px auto;
     border: 3px solid #55efc4;
     border-radius: 50%;
@@ -229,21 +231,34 @@ footer{
     background-color: #55efc4;
 }
 
-@media(max-width: 800px){
+
+@media(max-width: 1200px){
     .about-skills-wrapper{
         flex-direction: column;
+        width:100%;
+    }
+
+    .about-content, .skills-section{
+        margin-top: 3rem;
+        width: 100%;
     }
 
     .about-content{
         background-color: #55efc4;
-        margin-top: 3rem;
+        border-radius: 0px;
+        padding-top: 2.5rem;
+        text-align: center;
+       
     }
 
     .skills-section{
         background-color: #fff;
-        margin-top: 3rem;
     }
 
+}
+
+@media(max-width: 800px){
+    
     #about .coding-tool{
         background-color: #55efc4;
         color: #000;
