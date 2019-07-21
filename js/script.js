@@ -26,25 +26,25 @@ $(document).ready(function(){
     sr.reveal('#pro-1', {
         duration:2000,
         origin:'left',
-        distance:'50px'
+        distance:'30px'
     });
 
     sr.reveal('#pro-2', {
         duration:2000,
         origin:'right',
-        distance:'50px'
+        distance:'30px'
     });
 
     sr.reveal('#pro-3', {
         duration:2000,
         origin:'left',
-        distance:'50px'
+        distance:'30px'
     });
 
     sr.reveal('#pro-4', {
         duration:2000,
         origin:'right',
-        distance:'50px'
+        distance:'30px'
     });
 
    
