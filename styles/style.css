@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 html,body{
     overflow-x: hidden;
 }
@@ -298,9 +299,6 @@ footer{
         margin-bottom: 10px;
     }
     
-
-    
-
     #menu{
         display: block;
         margin-right: 10px;

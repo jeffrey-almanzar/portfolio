@@ -68,12 +68,12 @@
 }
 
 #project2{
-  background-image: url("../img/projects-imgs/paradise.JPG");
+  background-image: url("../img/projects-imgs/campusManager.png");
   
 }
 
 #project3{
-  background-image: url("../img/projects-imgs/VL.JPG");
+  background-image: url("../img/projects-imgs/paradise.JPG");
   background-position: center;
 }
 
@@ -116,6 +116,12 @@ span{
   transform: rotate(15deg);
 }
 
+
+.skill-tool-off{
+  display:inline-block;
+  margin-top: 10px;
+}
+
 @media(max-width: 800px){
   .projects{
     width: 95%;
@@ -124,6 +130,9 @@ span{
   .projects span{
     display: inline-block;
     margin-bottom: 10px;
+  }
+  .skill-tool-off{
+    margin-top: 0px;
   }
 
   .pro-tools-container{
