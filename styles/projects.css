@@ -1,97 +1,86 @@
-#projects-skills{
+#projects-skills {
   clear: left;
   margin-top: 0px;
   background-color: #55efc4;
   padding-bottom: 50px;
 }
 
-#projects-skills h2{
+#projects-skills h2 {
   text-align: center;
   padding: 50px 0px;
 }
 
-
-.projects{
+.projects {
   width: 70%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 50px;
-  
- 
 }
 
-.project-img{
+.project-img {
   width: 100%;
   height: 225px;
   background-color: #fff;
   border-bottom: 1px solid #8ca59e;
-  
- 
-
 }
 
-.project-content{
+.project-content {
   background-color: #fff;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  
 }
 
-.project-title h3{
+.project-title h3 {
   margin-bottom: 0;
   text-align: center;
   font-weight: 600;
   padding: 5px 0;
 }
-.project-title{
+.project-title {
   background-color: #fff;
   margin-bottom: 0;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  
 }
-.project-description{
+.project-description {
   border-bottom: 1px solid #000;
 }
 
-.project-img{
+.project-img {
   background-size: cover;
   background-position: top;
 }
-#project1{
+#project1 {
   background-image: url("../img/projects-imgs/valiant.png");
   background-position: top;
- 
 }
 
-#project2{
+#project2 {
   background-image: url("../img/projects-imgs/campusManager.png");
-  
 }
 
-#project3{
+#project3 {
   background-image: url("../img/projects-imgs/paradise.JPG");
   background-position: center;
 }
 
-#project4{
+#project4 {
   background-image: url("../img/projects-imgs/euler.JPG");
-  
 }
 
-.pro-links-img{
-  width:40px;
+.pro-links-img {
+  width: 40px;
 }
-.pro-tools-container{
+.pro-tools-container {
   float: left;
   width: 50%;
   padding-top: 15px;
   box-sizing: border-box;
 }
-.pro-links-container{
+.pro-links-container {
   float: right;
   width: 50%;
   text-align: right;
@@ -99,48 +88,45 @@
   padding-top: 7px;
 }
 
-span{
+span {
   color: #fff;
   box-sizing: border-box;
   padding: 5px;
   border-radius: 5px;
 }
 
-.coding-tool{
+.coding-tool {
   font-weight: bold;
   background-color: #000000;
 }
 
-
-.pro-links-img:hover{
+.pro-links-img:hover {
   transform: rotate(15deg);
 }
 
-
-.skill-tool-off{
-  display:inline-block;
+.skill-tool-off {
+  display: inline-block;
   margin-top: 10px;
 }
 
-@media(max-width: 800px){
-  .projects{
+@media (max-width: 800px) {
+  .projects {
     width: 95%;
   }
 
-  .projects span{
+  .projects span {
     display: inline-block;
     margin-bottom: 10px;
   }
-  .skill-tool-off{
+  .skill-tool-off {
     margin-top: 0px;
   }
 
-  .pro-tools-container{
+  .pro-tools-container {
     width: 70%;
   }
 
-  .pro-links-container{
+  .pro-links-container {
     width: 30%;
   }
-  
 }

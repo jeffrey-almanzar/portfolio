@@ -1,320 +1,287 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html,body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
-a{
-    cursor: pointer;
+a {
+  cursor: pointer;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* scroll reveal */
 html.sr .load-hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-body{
-    font-family:helvetica;
-    position: relative;
+body {
+  font-family: helvetica;
+  position: relative;
 }
 
 /* HEADING SECTION */
-.active{
-    text-decoration: underline;
+.active {
+  text-decoration: underline;
 }
 
-.nav-resume-link{
- color: #000 !important;
- /* border: 1px solid #000 !important; */
- background-color: #00d99b !important;
+.nav-resume-link {
+  color: #000 !important;
+  /* border: 1px solid #000 !important; */
+  background-color: #00d99b !important;
 }
 
-.nav-resume-link:hover{
-    text-decoration: none !important;
+.nav-resume-link:hover {
+  text-decoration: none !important;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active {
-    color: #000 !important;
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active {
+  color: #000 !important;
 }
 
-header .nav-link:hover{
-    text-decoration: underline;
+header .nav-link:hover {
+  text-decoration: underline;
 }
 
-.heading{
-    font-weight: 700;
+.heading {
+  font-weight: 700;
 }
 
-header{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: #55efc4;
-    
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #55efc4;
 }
-.navbar{
-    background-color: #55efc4;
-    color: #000;
+.navbar {
+  background-color: #55efc4;
+  color: #000;
 }
-
-
 
 /* WELCOME SECTION */
-#welcome{
-    /* clear: left; */
-    text-align: center;
-    padding-top: 20%;
-     
+#welcome {
+  /* clear: left; */
+  text-align: center;
+  padding-top: 20%;
 }
-#title{
-    font-weight: 600;
+#title {
+  font-weight: 600;
 }
-#welcome p{
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-
-.social-img{
-    margin-top: 10px;
-    
+#welcome p {
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
-.social-img:hover{
-    transform: rotate(5deg);
+.social-img {
+  margin-top: 10px;
 }
 
+.social-img:hover {
+  transform: rotate(5deg);
+}
 
 /* ABOUT SECTION */
-#about{
-    width: 100%;
-    padding: 100px 0 150px;
+#about {
+  width: 100%;
+  padding: 100px 0 150px;
 }
-.about-main-div{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-.about-skills-wrapper{
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-}
-#about .coding-tool{
-    background-color: #55efc4;
-    color: #000;
-    
+.about-main-div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.resume-div{
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 3rem;
+.about-skills-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+#about .coding-tool {
+  background-color: #55efc4;
+  color: #000;
 }
 
-.description-text{
-    font-size: 1.25rem;
-    line-height: 1.5;
+.resume-div {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 3rem;
 }
 
-.about-skills-container{
-    margin-bottom: 1rem;
-   
+.description-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
-.about-content{
-    padding: 1rem 1.5rem;
-    text-align:center; 
-    width: 40%;
-    border-radius: 0.5rem;
-    background-color: #a6ffe6;
-    
+.about-skills-container {
+  margin-bottom: 1rem;
 }
 
-.skills-section{
-    width: 40%;
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem; 
-    text-align: center;
-    background-color: #a6ffe6;
+.about-content {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  width: 40%;
+  border-radius: 0.5rem;
+  background-color: #a6ffe6;
 }
 
-.center{
-    text-align: center;
+.skills-section {
+  width: 40%;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  background-color: #a6ffe6;
 }
 
-.section-sub-heading{
-    text-align:center;
-    margin-bottom: 15px;
-    font-weight: 700;
-   
+.center {
+  text-align: center;
 }
 
-.group:after{
-    content: "";
-    display: table;
-    clear: both;
+.section-sub-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
- 
-#me{
-    display: block;
-    max-width: 225px;
-    max-height: 225px;
-    margin: 10px auto;
-    border: 3px solid #55efc4;
-    border-radius: 50%;
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.resume{
-    text-decoration:none;
-    color: #000;
-    font-weight: bold;
-    border:2px solid #55efc4;
-    background-color: #55efc4;
-    padding:5px;
-    border-radius: 5px;
-    text-align: center;
-
+#me {
+  display: block;
+  max-width: 225px;
+  max-height: 225px;
+  margin: 10px auto;
+  border: 3px solid #55efc4;
+  border-radius: 50%;
 }
 
-.resume:hover{
-    color: #000 !important;
-    text-decoration: none !important;
-
+.resume {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid #55efc4;
+  background-color: #55efc4;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-
-
-
-#resume:hover{
-    background-color:#fff;
+.resume:hover {
+  color: #000 !important;
+  text-decoration: none !important;
 }
 
+#resume:hover {
+  background-color: #fff;
+}
 
 /* CONTACT SECTION */
-#contact{
-    text-align: center;
-    margin: 150px auto;
+#contact {
+  text-align: center;
+  margin: 150px auto;
 }
 
-#contact a{
-    text-decoration:none;
-    color:black;
-    font-size: 1.875rem;
-    border: 2px solid #55efc4;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #55efc4;
-
+#contact a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.875rem;
+  border: 2px solid #55efc4;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #55efc4;
 }
 
-#contact a:hover{
-    background-color:#fff;
+#contact a:hover {
+  background-color: #fff;
 }
 
 /* FOOTER */
-footer p{
-    padding: 20px 0;
-    margin-bottom: 0;
+footer p {
+  padding: 20px 0;
+  margin-bottom: 0;
 }
-footer{
-    text-align: center;
+footer {
+  text-align: center;
+  background-color: #55efc4;
+}
+
+@media (max-width: 1200px) {
+  .about-skills-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-content,
+  .skills-section {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .about-content {
     background-color: #55efc4;
+    border-radius: 0px;
+    padding-top: 2.5rem;
+    text-align: center;
+  }
+
+  .skills-section {
+    background-color: #fff;
+  }
 }
 
+@media (max-width: 800px) {
+  #about .coding-tool {
+    background-color: #55efc4;
+    color: #000;
+  }
 
-@media(max-width: 1200px){
-    .about-skills-wrapper{
-        flex-direction: column;
-        width:100%;
-    }
-
-    .about-content, .skills-section{
-        margin-top: 3rem;
-        width: 100%;
-    }
-
-    .about-content{
-        background-color: #55efc4;
-        border-radius: 0px;
-        padding-top: 2.5rem;
-        text-align: center;
-       
-    }
-
-    .skills-section{
-        background-color: #fff;
-    }
-
+  .resume-div {
+    margin-bottom: 100px;
+  }
 }
 
-@media(max-width: 800px){
-    
-    #about .coding-tool{
-        background-color: #55efc4;
-        color: #000;
-    }
-
-    .resume-div{
-        margin-bottom: 100px;
-    }
-
-    
-}
-
-@media (max-width: 768px) { 
-
-    #welcome{
-        padding-top: 40%;
-    }
+@media (max-width: 768px) {
+  #welcome {
+    padding-top: 40%;
+  }
 }
 
 @media (max-width: 600px) {
-    *{
-        box-sizing: border-box;
-    }
-    #welcome{
-        padding-top: 50%;
-    }
-   
-    .resume-div{
-        width: 100%;
-    }
+  * {
+    box-sizing: border-box;
+  }
+  #welcome {
+    padding-top: 50%;
+  }
 
-    #about .coding-tool{
-        
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    #menu{
-        display: block;
-        margin-right: 10px;
-        padding: 10px 0;
-    }
+  .resume-div {
+    width: 100%;
+  }
 
+  #about .coding-tool {
+    display: block;
+    margin-bottom: 10px;
+  }
 
+  #menu {
+    display: block;
+    margin-right: 10px;
+    padding: 10px 0;
+  }
 
-    #about {
-       
-        padding: 100px 0;
-    }
-   
-
-    
-
-    
-
+  #about {
+    padding: 100px 0;
+  }
 }
