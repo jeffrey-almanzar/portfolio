@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   //Type js
   var typed = new Typed("#title-description", {
-    strings: ["Software engineer Intern and computer science tutor."],
+    strings: ["Technology passionate and lifelong learner."],
     typeSpeed: 60,
     showCursor: false,
     startDelay: 100,
