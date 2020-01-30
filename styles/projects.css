@@ -64,13 +64,13 @@
 }
 
 #project3 {
-  background-image: url("../img/projects-imgs/campusManager.png");
+  background-image: url("../img/projects-imgs/citySearch.png");
   background-position: bottom;
 }
 
 #project4 {
-  background-image: url("../img/projects-imgs/citySearch.png");
-  background-position: bottom;
+  background-image: url("../img/projects-imgs/euler.JPG");
+  background-position: center;
 }
 
 .pro-links-img {
