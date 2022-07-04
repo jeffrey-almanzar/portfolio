@@ -44,6 +44,10 @@ html {
   object-fit: contain;
   width: 100%;
 }
+/* ------- */
+
+
+/* Tabs */
 
 .tab-container {
   position: relative;
@@ -56,6 +60,20 @@ html {
   background-color: #000000;
   position: absolute;
 }
+
+/* Experience  */
+
+.logo-container {
+  width: 48px;
+  margin-right: 20px;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+
+
 
 /* jquery-ui overrides */
 
