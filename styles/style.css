@@ -40,10 +40,21 @@ html {
   background-image: linear-gradient(to left bottom, #000000, #0077F2);
 }
 
+.photo-container img {
+  object-fit: contain;
+  width: 100%;
+}
+
 .tab-container {
-  background-color: #000000;
-  height: var(--tab-height);
+  position: relative;
   margin-top: -50px;
+}
+
+.tab-bar {
+  height: var(--tab-height);
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
 }
 
 /* jquery-ui overrides */
@@ -86,4 +97,8 @@ html {
 
 #body .ui-tabs-active a {
   color: #0077F2 !important;
+}
+
+#body .ui-tabs .ui-tabs-panel {
+  padding-top: 40px;
 }
