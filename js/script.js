@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $( "#tabs" ).tabs();
+  
   window.sr = ScrollReveal();
 
   sr.reveal("#welcome", {

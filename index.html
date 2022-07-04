@@ -1,309 +1,186 @@
 <!DOCTYPE html>
 <html class="sr">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145085705-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145085705-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-145085705-1');
-        </script>
+      gtag("config", "UA-145085705-1");
+    </script>
 
-        <title>Jeffrey Almanzar</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- favicon -->
-        <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
-        
-        <!-- boostrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
-        <!-- style.css -->
-        <link rel="stylesheet" href="styles/style.css">
-        <link href="styles/projects.css" rel="stylesheet">
+    <title>Jeffrey Almanzar</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
 
-        <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-        <!-- type js -->
-        <script src="js/typed.min.js"></script>
-        <!-- scrollreveal -->
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    </head>
+    <!-- style.css -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="styles/projects.css" rel="stylesheet" />
 
-    <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
-    
-        <header class="animsition">
-            <!-- **************************************
-                         NAVIGATION BAR
+    <!-- jquery -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <!-- type js -->
+    <script src="js/typed.min.js"></script>
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+
+  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- **************************************
+                        Hero Section
             ************************************** -->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
-                <a class="navbar-brand" href="https://github.com/Jeffrey-A" target="_blank">GitHub</a>
-                <a class="navbar-brand" href="https://www.linkedin.com/in/jeffrey-almanzar/" target="_blank">LinkedIn</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="#welcome">Welcome<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item text-center">
-                        <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item text-center">
-                        <a class="nav-link" href="#projects-skills">Projects</a>
-                        </li>
-                        <li class="nav-item text-center">
-                        <a class="nav-link " href="mailTo:almanzarortizjeffrey@gmail.com">Contact</a>
-                        </li>
-                        <li class="nav-item text-center">
-                         <a class="nav-link resume nav-resume-link" href="resume/JeffreyA_Resume.pdf" target="_blank">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-              </nav>
-            <!----->
-           
-
-        <!-- **************************************
-                    Welcome Section
-            ************************************** -->
-        <div id="welcome">
-            <h1 id="title">Welcome!</h1>
-            <p id="title-description"></p>
-            <a href="https://github.com/Jeffrey-A" target="_black"><img class="social-img" src="img/icons/github.png"></a>
-            <a href="https://www.linkedin.com/in/jeffrey-almanzar-0a5459176/" target="_black"><img  id="linkdin"class="social-img" src="img/icons/linkdin.png"></a>
-           
+    <div class="container hero-wrapper">
+      <div class="d-flex">
+        <div class="col-8">
+          <div class="hero-content">
+            <p>Hi, my name is</p>
+            <h1>Jeffrey Almanzar.</h1>
+            <p class="lead">
+              I’m a software engineer that loves building things for the web. I
+              have a BS in computer science, and about three years of
+              professional web development experience.
+            </p>
+            <div>
+              <button type="button" class="btn btn-primary">Contact me</button>
+              <button type="button" class="btn btn-dark">Resume</button>
+            </div>
+          </div>
         </div>
-       
-     </header>
-   
-
-
-        <main>
-
-            <!-- **************************************
-                         ABOUT SECTION
-            ************************************** -->
-            <div id="about">
-                <div class="about-main-div" class="group">
-                    <div class="resume-div">
-                        <img id ="me" src="img/me.jpg" alt="photo of me">
-                        <a class="resume" href="resume/JeffreyA_Resume.pdf" target="_blank">RESUME</a>
-                    </div>
-                    
-                    <div class="about-skills-wrapper">
-                        <div class="about-content">
-                            <h2 class="section-sub-heading">ABOUT</h2>
-                            <p class="description-text">
-                                I’m a software engineer that loves building things for the web. I have a bachelors degree in computer science, and I have completed three software engineer internships.
-                            </p>
-                        </div>
-
-                        <div class="skills-section ">
-                            <h2 class="section-sub-heading">TECHNICAL SKILLS</h2>
-                              <p class="description-text">Proficient in </p>
-                              <div class="about-skills-container">
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                    <span class="coding-tool">Python3</span>
-                              </div>
-
-                              <p class="description-text">Prior experience</p>
-                              <div>
-                                    <span class="coding-tool">PostgreSQL</span>
-                                    <span class="coding-tool">Node JS</span>
-                                    <span class="coding-tool">Express</span>
-                                    <span class="coding-tool">TypeScript</span>
-                                    <span class="coding-tool">Java</span>               
-                              </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                
-                </div>
+        <div class="col-4">
+          <div class="photo-container">
+            <!-- <img src="https://www.pinpng.com/pngs/m/60-601053_man-3-young-man-transparent-background-hd-png.png" alt=""/> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="tab-container">
+        <div class="container">
+          <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Overview</a></li>
+              <li><a href="#tabs-2">Experience</a></li>
+              <li><a href="#tabs-3">Credentials</a></li>
+              <li><a href="#tabs-4">Projects</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p>
+                Proin elit arcu, rutrum commodo, vehicula tempus, commodo a,
+                risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
+                mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa
+                et lorem. Mauris dapibus lacus auctor risus. Aenean tempor
+                ullamcorper leo. Vivamus sed magna quis ligula eleifend
+                adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede
+                varius sollicitudin. Sed ut dolor nec orci tincidunt interdum.
+                Phasellus ipsum. Nunc tristique tempus lectus.
+              </p>
             </div>
-
-
-            <!-- **************************************
-                         PROJECTS SECTION
-            ************************************** -->
-            <div id="projects-skills" class="group">
-                <h2 class="heading">PROJECTS</h2>
-                
-                <div class="project-container">
-
-                    <!-- PROJECT 1 -->
-                    <div id="pro-1"class="projects">
-
-                        <div class="project-title">
-                            <h3>Goal Management App</h3>
-                        </div>
-
-                        <!-- image -->
-                        <a href="https://github.com/Jeffrey-A/build-your-future-today#preview" target="_blank"><div id="project1" class="project-img">
-                        </div></a>
-
-                        <div class="project-content group">
-                            <div class="project-description">
-                                <p>
-                                    Multi-user goal management system that allows users to create goals, create daily tasks for their goals, and keep track of their progress.
-                                </p>
-                            </div>
-
-                            <div class="pro-tools-container">
-                                <p>
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                    <span class="coding-tool">Node JS</span>
-                                    <span class="coding-tool">Express</span>
-                                    <span class="coding-tool skill-tool-off">PostgreSQL</span>
-                                
-                                </p>
-                            </div>
-
-                            <div class="pro-links-container">
-                                <a href="https://github.com/Jeffrey-A/build-your-future-today" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                <a href="https://github.com/Jeffrey-A/build-your-future-today#preview" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- PROJECT 2 -->
-                    <div id="pro-2"class="projects">
-
-                        <div class="project-title">
-                            <h3>E-commerce</h3>
-                        </div>
-
-                        <!-- image -->
-                        <a href="https://valiantshopping.netlify.com/" target="_blank"><div id="project2" class="project-img">
-                        </div></a>
-
-                        <div class="project-content group">
-                            <div class="project-description">
-                                <p>
-                                    Full stack e-commerce with shopping cart functionality, real payment handling and mobile friendly.
-                                </p>
-                            </div>
-
-                            <div class="pro-tools-container">
-                                <p>
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                    <span class="coding-tool">Node JS</span>
-                                    <span class="coding-tool">Express</span>
-                                    <span class="coding-tool skill-tool-off">PostgreSQL</span>
-                                
-                                </p>
-                            </div>
-
-                            <div class="pro-links-container">
-                                <a href="https://github.com/Jeffrey-A/eCommerceProject" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                <a href="https://valiantshopping.netlify.com/" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- PROJECT 3 -->
-                    <div id="pro-3"class="projects">
-                            <div class="project-title">
-                                <h3>City Search</h3>
-                            </div>
-                        <!-- image -->
-                        <a href="https://getcityinfo.netlify.com/" target="_blank"><div id="project3" class="project-img">
-                        </div></a>
-
-                        <div class="project-content group">
-                                <div class="project-description">
-                                    <p>When given a city name, it fetches and displays all the zip codes of the given city and displays information about
-                                        each zip code.
-                                    </p>
-                                </div>
-                            <div class="pro-tools-container">
-                                <p>
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                </p>
-                            </div>
-
-                            <div class="pro-links-container">
-                                <a href="https://github.com/Jeffrey-A/citySearch" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                <a href="https://getcityinfo.netlify.com/" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-    
-                    <!-- PROJECT 4-->
-                    <div id="pro-4"class="projects">
-
-                            <div class="project-title">
-                                <h3>Desktop App</h3>
-                            </div>
-
-                            <a href="https://github.com/Jeffrey-A/Euler-Circuit-and-Trail" target="_blank"><div  id="project4"class="project-img">
-                            </div></a>
-    
-                            <div class="project-content group">
-                                    <div class="project-description">
-                                        <p>GUI desktop program that when given a graph (vertices and edges) the program calculates the degree of each vertex and concludes if the graph has a Euler circuit, Euler trail or neither. 
-                                        I created this project using the python 3 programming language and the GUI Tkinter package.
-                                        </p>
-                                    </div>
-
-                                    <div class="pro-tools-container">
-                                        <p><span class="coding-tool">Python</span></p>
-                                    </div>
-        
-                                    <div class="pro-links-container">
-                                        <a href="https://github.com/Jeffrey-A/Euler-Circuit-and-Trail" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                        <a href="https://github.com/Jeffrey-A/Euler-Circuit-and-Trail" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
-                                    </div>
-                            </div>
-    
-                    </div>
-    
-    
-                </div>   
-
+            <div id="tabs-2">
+              <p>
+                Morbi tincidunt, dui sit amet facilisis feugiat, odio metus
+                gravida ante, ut pharetra massa metus id nunc. Duis scelerisque
+                molestie turpis. Sed fringilla, massa eget luctus malesuada,
+                metus eros molestie lectus, ut tempus eros massa ut dolor.
+                Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula
+                suscipit aliquam. Praesent in eros vestibulum mi adipiscing
+                adipiscing. Morbi facilisis. Curabitur ornare consequat nunc.
+                Aenean vel metus. Ut posuere viverra nulla. Aliquam erat
+                volutpat. Pellentesque convallis. Maecenas feugiat, tellus
+                pellentesque pretium posuere, felis lorem euismod felis, eu
+                ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+              </p>
             </div>
-           
-            <!-- **************************************
-                        CONTACT SECTION
-            ************************************** -->
-            <div id="contact">
-                <a href="mailTo:almanzarortizjeffrey@gmail.com">GET IN TOUCH!</a>
+            <div id="tabs-3">
+              <p>
+                Mauris eleifend est et turpis. Duis id erat. Suspendisse
+                potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque
+                rutrum erat, eu congue orci lorem eget lorem. Vestibulum non
+                ante. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque
+                eu urna vel enim commodo pellentesque. Praesent eu risus
+                hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
+                nec, feugiat nec, luctus a, lacus.
+              </p>
+              <p>
+                Duis cursus. Maecenas ligula eros, blandit nec, pharetra at,
+                semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent
+                viverra justo vitae neque. Praesent blandit adipiscing velit.
+                Suspendisse potenti. Donec mattis, pede vel pharetra blandit,
+                magna ligula faucibus eros, id euismod lacus dolor eget odio.
+                Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
+                sagittis. Donec nisi lectus, feugiat porttitor, tempor ac,
+                tempor vitae, pede. Aenean vehicula velit eu tellus interdum
+                rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus.
+                Vivamus a libero vitae lectus hendrerit hendrerit.
+              </p>
             </div>
+            <div id="tabs-4">
+              <p>
+                Mauris eleifend est et turpis. Duis id erat. Suspendisse
+                potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque
+                rutrum erat, eu congue orci lorem eget lorem. Vestibulum non
+                ante. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque
+                eu urna vel enim commodo pellentesque. Praesent eu risus
+                hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
+                nec, feugiat nec, luctus a, lacus.
+              </p>
+              <p>
+                Duis cursus. Maecenas ligula eros, blandit nec, pharetra at,
+                semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent
+                viverra justo vitae neque. Praesent blandit adipiscing velit.
+                Suspendisse potenti. Donec mattis, pede vel pharetra blandit,
+                magna ligula faucibus eros, id euismod lacus dolor eget odio.
+                Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
+                sagittis. Donec nisi lectus, feugiat porttitor, tempor ac,
+                tempor vitae, pede. Aenean vehicula velit eu tellus interdum
+                rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus.
+                Vivamus a libero vitae lectus hendrerit hendrerit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-        </main>
-
-        <footer>
-            <p>&copy; Jeffrey Almanzar</p>
-        </footer>
-        
-
-        <!-- boostrap js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-    </body>
+    <!-- boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
