@@ -76,9 +76,34 @@ html {
   font-size: 14px;
 }
 
+.experience-content {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.experience .description-list {
+  padding: 0px;
+  list-style-position: inside;
+  list-style: none;
+}
+
+.experience .description-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.experience .description-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0px;
+  color: #333333;
+}
+
 .location {
   color: #333333;
   margin-right: 10px;
+  padding: 0px;
 }
 
 .location::after {
