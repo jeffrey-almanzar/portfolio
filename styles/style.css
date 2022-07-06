@@ -69,7 +69,34 @@ html {
 }
 
 .logo-container img {
-  width: 100%;
+  width: 48px;
+}
+
+.date-location {
+  font-size: 14px;
+}
+
+.location {
+  color: #333333;
+  margin-right: 10px;
+}
+
+.location::after {
+  content: '|';
+  margin-left: 10px;
+}
+
+.company {
+  font-size: 24px;
+}
+
+.company a {
+  text-decoration: none;
+}
+
+.position {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 
