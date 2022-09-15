@@ -1,7 +1,7 @@
 #projects-skills {
-  clear: left;
+  /* clear: left; */
   margin-top: 0px;
-  background-color: #55efc4;
+  /* background-color: #55efc4; */
   padding-bottom: 50px;
 }
 
@@ -11,10 +11,12 @@
 }
 
 .projects {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 50px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.project-skils {
+  align-items: center;
 }
 
 .project-img {
@@ -27,7 +29,7 @@
 .project-content {
   background-color: #fff;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
   box-sizing: border-box;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -35,19 +37,19 @@
 
 .project-title h3 {
   margin-bottom: 0;
-  text-align: center;
-  font-weight: 600;
+  /* text-align: center; */
+  /* font-weight: 600; */
   padding: 5px 0;
 }
 .project-title {
-  background-color: #000;
-  color: #fff;
+  /* background-color: #000; */
+  color: #000;
   margin-bottom: 0;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px; */
 }
 .project-description {
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
 }
 
 .project-img {
@@ -77,20 +79,18 @@
   width: 40px;
 }
 .pro-tools-container {
-  float: left;
   width: 50%;
   padding-top: 15px;
   box-sizing: border-box;
 }
 .pro-links-container {
-  float: right;
   width: 50%;
   text-align: right;
   box-sizing: border-box;
   padding-top: 7px;
 }
 
-span {
+#projects-skills span {
   color: #fff;
   box-sizing: border-box;
   padding: 5px;
@@ -106,11 +106,11 @@ span {
   transform: rotate(15deg);
 }
 
-.skill-tool-off {
+/* .skill-tool-off {
   display: inline-block;
   margin-top: 10px;
   padding: 1px 5px;
-}
+} */
 
 @media (max-width: 800px) {
   .projects {
