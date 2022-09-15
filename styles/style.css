@@ -25,23 +25,24 @@ html {
 
 .hero-content {
   max-width: 80%;
-  margin-top: 150px;
+  margin-top: 10px;
 }
 
 .hero-wrapper {
-  min-height: 600px;
-  max-height: 100vh;
+  margin-bottom: 50px;
 }
 
 .photo-container {
-  width: 100%;
-  height: 740px;
-  max-height: 100vh;
+  /* width: 100px; */
+  height: 280px;
+  /* border-radius: 50%; */
   background-image: linear-gradient(to left bottom, #000000, #0077F2);
 }
 
 .photo-container img {
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
+  max-height: 100%;
   width: 100%;
 }
 /* ------- */
@@ -129,46 +130,73 @@ html {
 
 /* jquery-ui overrides */
 
-#body .ui-widget.ui-widget-content {
+#tab-container .ui-widget.ui-widget-content {
   border: none;
 }
 
-#body .ui-widget-header {
+#tab-container .ui-widget-header {
   border: none;
   background-color: #000000;
   height: var(--tab-height);
 }
 
-#body .ui-tabs {
+#tab-container .ui-tabs {
   padding: 0px;
 }
 
-#body .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+#tab-container .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: none;
   background-color: transparent;
 }
 
-#body .ui-corner-all {
+#tab-container .ui-corner-all {
   border-radius: 0px;
 }
 
-#body .ui-tabs-nav {
+#tab-container .ui-tabs-nav {
   display: flex;
   align-items: center;
 }
 
-#body .ui-tabs .ui-tabs-nav {
+#tab-container .ui-tabs .ui-tabs-nav {
   padding: 0px;
 }
 
-#body .ui-state-default, .ui-widget-header a {
+#tab-container .ui-state-default, .ui-widget-header a {
   color: #ffffff !important;
 }
 
-#body .ui-tabs-active a {
+#tab-container .ui-tabs-active a {
   color: #0077F2 !important;
 }
 
-#body .ui-tabs .ui-tabs-panel {
+#tab-container .ui-tabs .ui-tabs-panel {
   padding-top: 40px;
+}
+
+@media (min-width: 768px) { 
+  .hero-wrapper {
+    min-height: 600px;
+    max-height: 100vh;
+    margin-bottom: 0px;
+  }
+
+  .photo-container {
+    width: 100%;
+    height: 740px;
+    max-height: 100vh;
+    border-radius: unset;
+    background-image: linear-gradient(to left bottom, #000000, #0077F2);
+  }
+
+  .photo-container img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .hero-content {
+    max-width: 80%;
+    margin-top: 150px;
+  }
+
 }

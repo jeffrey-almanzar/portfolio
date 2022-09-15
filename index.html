@@ -46,7 +46,10 @@
             ************************************** -->
         <div class="container hero-wrapper">
             <div class="d-flex">
-                <div class="col-7">
+                <div class="col-md-7">
+                    <div class="photo-container d-md-none mt-5 mb-5">
+                        <img src="/img/hero-photo.png" alt="Jeffrey Almanzar" />
+                    </div>
                     <div class="hero-content">
                         <p>Hi, my name is</p>
                         <h1 class="mb-4">Jeffrey Almanzar.</h1>
@@ -61,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-5 d-none d-md-block">
                     <div class="photo-container">
                         <img src="/img/hero-photo.png" alt="Jeffrey Almanzar" />
                     </div>
@@ -69,7 +72,10 @@
             </div>
         </div>
         <main>
-            <div class="tab-container">
+            <!-- **************************************
+                        Desktop Tabs
+            ************************************** -->
+            <div id="tab-container" class="tab-container d-none d-md-block">
                 <div class="tab-bar"></div>
                 <div class="container">
                     <div id="tabs">
@@ -603,7 +609,6 @@
                                         </a>
 
                                         <div class="project-content group">
-                                            
                                             <div class="d-flex project-skils">
                                                 <div class="pro-tools-container">
                                                     <p>
@@ -637,9 +642,8 @@
 
                                         <div class="project-description">
                                             <p>
-                                                Full stack e-commerce with shopping cart
-                                                functionality, real payment handling and mobile
-                                                friendly.
+                                                Full stack e-commerce with shopping cart functionality,
+                                                real payment handling and mobile friendly.
                                             </p>
                                         </div>
 
@@ -649,7 +653,6 @@
                                         </a>
 
                                         <div class="project-content group">
-                                            
                                             <div class="d-flex">
                                                 <div class="pro-tools-container">
                                                     <p>
@@ -683,9 +686,9 @@
 
                                         <div class="project-description">
                                             <p>
-                                                When given a city name, it fetches and displays all
-                                                the zip codes of the given city and displays
-                                                information about each zip code.
+                                                When given a city name, it fetches and displays all the
+                                                zip codes of the given city and displays information
+                                                about each zip code.
                                             </p>
                                         </div>
 
@@ -695,7 +698,6 @@
                                         </a>
 
                                         <div class="project-content group">
-                                            
                                             <div class="d-flex">
                                                 <div class="pro-tools-container">
                                                     <p>
@@ -729,8 +731,8 @@
                                                 GUI desktop program that when given a graph (vertices
                                                 and edges) the program calculates the degree of each
                                                 vertex and concludes if the graph has a Euler circuit,
-                                                Euler trail or neither. I created this project using
-                                                the python 3 programming language and the GUI Tkinter
+                                                Euler trail or neither. I created this project using the
+                                                python 3 programming language and the GUI Tkinter
                                                 package.
                                             </p>
                                         </div>
@@ -740,7 +742,6 @@
                                         </a>
 
                                         <div class="project-content group">
-                                            
                                             <div class="d-flex">
                                                 <div class="pro-tools-container">
                                                     <p><span class="btn btn-sm btn-dark">Python</span></p>
@@ -760,6 +761,62 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- **************************************
+                        Mobile Accordions
+            ************************************** -->
+            <div class="container d-md-none">
+                <div id="accordion">
+                    <h3>Section 1</h3>
+                    <div>
+                        <p>
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+                            Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+                            condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam
+                            mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
+                            velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+                    <h3>Section 2</h3>
+                    <div>
+                        <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit
+                            amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris
+                            turpis porttitor velit, faucibus interdum tellus libero ac justo.
+                            Vivamus non quam. In suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <h3>Section 3</h3>
+                    <div>
+                        <p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
+                            lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
+                            Phasellus ac libero ac tellus pellentesque semper. Sed ac felis.
+                            Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu
+                            iaculis leo purus venenatis dui.
+                        </p>
+                        <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                        </ul>
+                    </div>
+                    <h3>Section 4</h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum
+                            primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                            Aenean lacinia mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+                            lectus. Class aptent taciti sociosqu ad litora torquent per
+                            conubia nostra, per inceptos himenaeos.
+                        </p>
                     </div>
                 </div>
             </div>
