@@ -13,12 +13,12 @@ $(document).ready(function() {
   });
 
   //Type js
-  var typed = new Typed("#title-description", {
-    strings: ["Technology passionate and lifelong learner."],
-    typeSpeed: 60,
+  var typed = new Typed("#name", {
+    strings: ["Jeffrey Almanzar."],
+    typeSpeed: 90,
     showCursor: false,
-    startDelay: 100,
-    loop: true
+    startDelay: 150,
+    loop: false
   });
 
   sr.reveal("#about", {

@@ -22,10 +22,18 @@ html {
 
 
 /* Hero Section */
+.name {
+  position: absolute;
+}
+
+.hero-description {
+  margin-top: 70px;
+}
 
 .hero-content {
   max-width: 80%;
   margin-top: 10px;
+  position: relative;
 }
 
 .hero-wrapper {
@@ -190,7 +198,11 @@ html {
   background: #0d6efd;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+  .hero-description {
+    margin-top: 90px;
+  }
+
   .hero-wrapper {
     min-height: 600px;
     max-height: 100vh;
