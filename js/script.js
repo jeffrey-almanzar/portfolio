@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $( "#tabs" ).tabs();
   $( "#accordion" ).accordion({
-    collapsible: true
+    collapsible: true,
+    heightStyle: "content",
   });
   
   window.sr = ScrollReveal();
