@@ -240,6 +240,10 @@ html {
     height: 740px;
   }
 
+  .about-text {
+    max-width: 50%;
+  }
+
   .hero-content {
     margin-top: 150px;
   }
