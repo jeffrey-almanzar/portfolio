@@ -1,6 +1,15 @@
 $(document).ready(function () {
   // $( "#tabs" ).tabs();
-  $("#accordion").accordion({
+  $("#mobile-accordion").accordion({
+    collapsible: true,
+    heightStyle: "content",
+  });
+
+  $("#experience-acc").accordion({
+    collapsible: true,
+    heightStyle: "content",
+  });
+  $("#credentials-acc").accordion({
     collapsible: true,
     heightStyle: "content",
   });
