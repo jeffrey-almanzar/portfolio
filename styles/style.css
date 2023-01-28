@@ -206,6 +206,17 @@ html {
   border-radius: 0.25rem;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+}
+
+.skills-grid span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 @media (min-width: 768px) {
   .hero-description {
     margin-top: 90px;
@@ -253,4 +264,16 @@ html {
   .hero-content {
     margin-top: 150px;
   }
+}
+
+.tooltip {
+  
+}
+
+.tooltip-inner {
+  
+}
+
+.tooltip-arrow {
+
 }
