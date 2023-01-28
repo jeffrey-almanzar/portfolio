@@ -58,24 +58,6 @@
   background-size: cover;
   background-position: top;
 }
-#project1 {
-  background-image: url("../img/projects-imgs/goals2.png");
-  background-position: top;
-}
-
-#project2 {
-  background-image: url("../img/projects-imgs/valiant.png");
-}
-
-#project3 {
-  background-image: url("../img/projects-imgs/citySearch.png");
-  background-position: bottom;
-}
-
-#project4 {
-  background-image: url("../img/projects-imgs/euler.JPG");
-  background-position: center;
-}
 
 .pro-links-img {
   width: 40px;
