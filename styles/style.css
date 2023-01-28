@@ -18,10 +18,59 @@ html {
 
 :root {
   --tab-height: 50px;
+  --primary-color: #0060f0;
+}
+
+.section {
+  scroll-margin-top: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 
 /* Hero Section */
+
+header {
+  position: relative;
+  /* background-color: var(--primary-color); */
+  color: #fff;
+}
+
+.logo {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.navbar {
+  /* background-color: var(--primary-color); */
+  transition: background-color 1s;
+}
+
+.test-bg {
+  background-color: var(--primary-color);
+}
+
+.test-bg .logo {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active {
+  color: var(--primary-color) !important;
+}
+
+.test-bg.navbar-light .navbar-nav .nav-link,
+.test-bg.navbar-light .navbar-nav .active {
+  color: #fff !important;
+}
+
+
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+}
+
 .name {
   position: absolute;
 }
@@ -42,9 +91,10 @@ html {
 
 .photo-container {
   /* width: 100px; */
+  border-radius: 0.25rem;
   height: 280px;
   /* border-radius: 50%; */
-  background-image: linear-gradient(to left bottom, #000000, #0077F2);
+  background-image: linear-gradient(to left bottom, #000000, var(--primary-color));
 }
 
 .photo-container img {
@@ -201,7 +251,7 @@ html {
 }
 
 .skills-section {
-  background-color: #009bff;
+  background-color: #f9f9f9;
   /* padding: 1rem 1.5rem; */
   border-radius: 0.25rem;
 }
@@ -232,11 +282,11 @@ html {
 
   .photo-container {
     width: 100%;
-    height: 560px;
+    height: 440px;
     max-height: 100vh;
-    border-radius: unset;
+    margin-top: 125px;
     position: relative;
-    background-image: linear-gradient(to left bottom, #000000, #0077F2);
+    background-image: linear-gradient(to left bottom, #000000, #0073ff);
   }
 
   .photo-container img {
@@ -244,7 +294,6 @@ html {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    border-radius: 0.25rem;
   }
 
   .hero-content {
@@ -256,11 +305,20 @@ html {
 
 @media (min-width: 992px) {
   .photo-container {
-    height: 740px;
+    height: 440px;
   }
 
   .about-text {
-    max-width: 80%;
+    max-width: 60%;
+  }
+
+  .about-photo-container {
+    width: 30%;
+  }
+
+  .about-photo-container img {
+    max-width: 100%;
+    border-radius: 0.25rem;
   }
 
   .hero-content {

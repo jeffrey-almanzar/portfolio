@@ -1,10 +1,10 @@
-$(document).ready(function() {
-  $( "#tabs" ).tabs();
-  $( "#accordion" ).accordion({
+$(document).ready(function () {
+  // $( "#tabs" ).tabs();
+  $("#accordion").accordion({
     collapsible: true,
     heightStyle: "content",
   });
-  
+
   window.sr = ScrollReveal();
 
   sr.reveal("#welcome", {
@@ -52,9 +52,29 @@ $(document).ready(function() {
   //   origin: "right",
   //   distance: "30px"
   // });
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+
+
+  window.onscroll = function () { myFunction(); };
+
+  let navbar = document.getElementsByClassName("navbar")[0];
+  let sticky = 80;
+
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("test-bg");
+  }
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("test-bg");
+    } else {
+      navbar.classList.remove("test-bg");
+    }
+  }
 });
 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
