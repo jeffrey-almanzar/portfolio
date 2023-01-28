@@ -77,8 +77,8 @@ html {
   margin-right: 20px;
 }
 
-.logo-container img {
-  width: 48px;
+.logo-container i {
+  font-size: 30px;
 }
 
 .date-location {
