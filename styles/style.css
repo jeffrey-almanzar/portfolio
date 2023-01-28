@@ -202,13 +202,15 @@ html {
 
 .skills-section {
   background-color: #009bff;
-  padding: 1rem 1.5rem;
+  /* padding: 1rem 1.5rem; */
   border-radius: 0.25rem;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  /* display: grid;
+  grid-template-columns: repeat(2, auto); */
+  display: flex;
+  flex-wrap: wrap;
   gap: 5px;
 }
 
@@ -258,7 +260,7 @@ html {
   }
 
   .about-text {
-    max-width: 50%;
+    max-width: 80%;
   }
 
   .hero-content {
@@ -267,11 +269,12 @@ html {
 }
 
 .tooltip {
-  
+  /* width: 400px; */
 }
 
 .tooltip-inner {
-  
+  background-color: blue;
+  /* width: 100% !important; */
 }
 
 .tooltip-arrow {
