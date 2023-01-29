@@ -81,8 +81,7 @@ header {
 }
 
 .hero-content {
-  max-width: 80%;
-  margin-top: 10px;
+  margin-top: 100px;
   position: relative;
 }
 
@@ -228,7 +227,7 @@ header {
 }
 
 #tab-container .ui-tabs-active a {
-  color: #0077F2 !important;
+  color: var(--primary-color) !important;
 }
 
 #tab-container .ui-tabs .ui-tabs-panel {
@@ -275,8 +274,12 @@ header {
     margin-top: 90px;
   }
 
+  .hero-content {
+    max-width: 80%;
+  }
+
   .hero-wrapper {
-    min-height: 600px;
+    /* min-height: 600px; */
     max-height: 100vh;
     margin-bottom: 0px;
   }
@@ -371,6 +374,11 @@ header {
   }
 
 }
+.about-photo-container img {
+  max-width: 100%;
+  border-radius: 0.25rem;
+  height: 300px;
+}
 
 @media (min-width: 992px) {
   .photo-container {
@@ -386,12 +394,12 @@ header {
   }
 
   .about-photo-container img {
-    max-width: 100%;
-    border-radius: 0.25rem;
+    height: auto;
   }
 
   .hero-content {
     margin-top: 150px;
+    min-height: 400px;
   }
 }
 
@@ -406,4 +414,21 @@ header {
 
 .tooltip-arrow {
 
+}
+
+.navbar-toggler {
+  border: none;
+  
+}
+
+.navbar-toggler i {
+  color: var(--primary-color);
+}
+
+.test-bg .navbar-toggler i {
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
 }
