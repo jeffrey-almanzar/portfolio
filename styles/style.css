@@ -281,13 +281,81 @@ header {
     margin-bottom: 0px;
   }
 
+  .photo-container-wrapper {
+    width: 500px;
+    top: -378px;
+    right: 0;
+  }
+
+  .photo-container-wrapper:hover .photo-container::before,
+  .photo-container-wrapper:hover .photo-container::after {
+    color: var(--primary-color);
+  }
+
+
   .photo-container {
     width: 100%;
     height: 440px;
     max-height: 100vh;
-    margin-top: 125px;
+    /* margin-top: 125px; */
     position: relative;
-    background-image: linear-gradient(to left bottom, #000000, #0073ff);
+    background-image: unset;
+    position: relative;
+    /* background-image: linear-gradient(to left bottom, #000000, #0073ff); */
+  }
+
+  @keyframes left {
+    0% {
+      top: 100px;
+    }
+
+    50% {
+      top: 200px;
+    }
+
+    100% {
+      top: 100px;
+    }
+  }
+
+  @keyframes right {
+    0% {
+      top: 100px;
+    }
+
+    50% {
+      top: -80px;
+    }
+
+    100% {
+      top: 100px;
+    }
+  }
+
+  .photo-container::after {
+    content: "}";
+    font-size: 150px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    animation-name: right;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .photo-container::before {
+    content: "{";
+    font-size: 150px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    animation-name: left;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
   }
 
   .photo-container img {
