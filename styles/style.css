@@ -46,6 +46,7 @@ header {
 .navbar {
   /* background-color: var(--primary-color); */
   transition: background-color 1s;
+  background-color: #fff;
 }
 
 .test-bg {
@@ -343,7 +344,7 @@ header {
     top: 100px;
     animation-name: right;
     animation-delay: 2s;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
@@ -356,7 +357,7 @@ header {
     top: 100px;
     animation-name: left;
     animation-delay: 2s;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
