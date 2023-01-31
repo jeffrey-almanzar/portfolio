@@ -429,7 +429,3 @@ header {
 .test-bg .navbar-toggler i {
   color: #fff;
 }
-
-.navbar-light .navbar-toggler-icon {
-  background-image: none;
-}
