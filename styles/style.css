@@ -124,12 +124,12 @@ header {
 /* Experience  */
 
 .logo-container {
-  width: 48px;
+  width: 8px;
   margin-right: 20px;
 }
 
 .logo-container i {
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .date-location {
@@ -273,6 +273,14 @@ header {
 @media (min-width: 768px) {
   .hero-description {
     margin-top: 90px;
+  }
+
+  .logo-container i {
+    font-size: 30px;
+  }
+
+  .logo-container {
+    width: 48px;
   }
 
   .hero-content {
@@ -428,4 +436,24 @@ header {
 
 .test-bg .navbar-toggler i {
   color: #fff;
+}
+
+.menu-icon {
+  font-size: 25px;
+}
+
+.navbar-toggler {
+  padding-left: 0px;
+  padding-right: 0px;
+  color: var(--primary-color) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
 }
