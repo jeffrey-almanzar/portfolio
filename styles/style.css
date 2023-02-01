@@ -457,3 +457,8 @@ header {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.skill {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
