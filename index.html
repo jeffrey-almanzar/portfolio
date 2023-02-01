@@ -4,306 +4,855 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145085705-1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-        gtag('config', 'UA-145085705-1');
+            gtag("config", "UA-145085705-1");
         </script>
 
         <title>Jeffrey Almanzar</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8" />
+        <meta name="description" content="Hi, my name is Jeffrey Almanzar. I’m a software engineer that loves implementing user interfaces following design guidelines, and I've
+        been in the web development industry for 3+ years focusing mainly on frontend development in React JS.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <!-- favicon -->
-        <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
-        
+        <link rel="icon" type="image/png" href="img/icons/favicon.png" sizes="32x32" />
+
         <!-- boostrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+
         <!-- style.css -->
-        <link rel="stylesheet" href="styles/style.css">
-        <link href="styles/projects.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css" />
+        <link href="styles/projects.css" rel="stylesheet" />
 
         <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
         <!-- type js -->
         <script src="js/typed.min.js"></script>
         <!-- scrollreveal -->
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="https://kit.fontawesome.com/9718178124.js" crossorigin="anonymous"></script>
     </head>
 
     <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
-    
-        <header class="animsition">
-            <!-- **************************************
-                         NAVIGATION BAR
-            ************************************** -->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
-                <a class="navbar-brand" href="https://github.com/Jeffrey-A" target="_blank">GitHub</a>
-                <a class="navbar-brand" href="https://www.linkedin.com/in/jeffrey-almanzar/" target="_blank">LinkedIn</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="#welcome">Welcome<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item text-center">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container d-flex justify-content-between">
+              <a class="logo" href="#">{JA}</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars menu-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mt-4 mt-lg-0 me-auto mb-2 mb-lg-0 d-lg-flex justify-content-end w-100">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item text-center">
-                        <a class="nav-link" href="#projects-skills">Projects</a>
-                        </li>
-                        <li class="nav-item text-center">
-                        <a class="nav-link " href="mailTo:almanzarortizjeffrey@gmail.com">Contact</a>
-                        </li>
-                        <li class="nav-item text-center">
-                         <a class="nav-link resume nav-resume-link" href="resume/JeffreyA_Resume.pdf" target="_blank">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-              </nav>
-            <!----->
-           
-
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#credentials">Credentials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <!-- **************************************
-                    Welcome Section
+                        Hero Section
             ************************************** -->
-        <div id="welcome">
-            <h1 id="title">Welcome!</h1>
-            <p id="title-description"></p>
-            <a href="https://github.com/Jeffrey-A" target="_black"><img class="social-img" src="img/icons/github.png"></a>
-            <a href="https://www.linkedin.com/in/jeffrey-almanzar-0a5459176/" target="_black"><img  id="linkdin"class="social-img" src="img/icons/linkdin.png"></a>
-           
-        </div>
-       
-     </header>
-   
-
-
-        <main>
-
-            <!-- **************************************
-                         ABOUT SECTION
-            ************************************** -->
-            <div id="about">
-                <div class="about-main-div" class="group">
-                    <div class="resume-div">
-                        <img id ="me" src="img/me.jpg" alt="photo of me">
-                        <a class="resume" href="resume/JeffreyA_Resume.pdf" target="_blank">RESUME</a>
-                    </div>
-                    
-                    <div class="about-skills-wrapper">
-                        <div class="about-content">
-                            <h2 class="section-sub-heading">ABOUT</h2>
-                            <p class="description-text">
-                                I’m a software engineer that loves building things for the web. I have a bachelors degree in computer science, and I have completed three software engineer internships.
-                            </p>
-                        </div>
-
-                        <div class="skills-section ">
-                            <h2 class="section-sub-heading">TECHNICAL SKILLS</h2>
-                              <p class="description-text">Proficient in </p>
-                              <div class="about-skills-container">
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                    <span class="coding-tool">Python3</span>
-                              </div>
-
-                              <p class="description-text">Prior experience</p>
-                              <div>
-                                    <span class="coding-tool">PostgreSQL</span>
-                                    <span class="coding-tool">Node JS</span>
-                                    <span class="coding-tool">Express</span>
-                                    <span class="coding-tool">TypeScript</span>
-                                    <span class="coding-tool">Java</span>               
-                              </div>
-                                
-                            </div>
-                            
+        <div class="container hero-wrapper">
+            <div class="d-flex">
+                <div class="col-lg-7">
+                    <!-- <div class="photo-container d-md-none mt-5 mb-5">
+                        <img src="/img/hero-photo.png" alt="Jeffrey Almanzar" />
+                    </div> -->
+                    <div class="hero-content">
+                        <p>Hi, my name is</p>
+                        <h1 id="name" class="name"></h1>
+                        <p id="hero-description" class="lead mb-5 hero-description">
+                            I’m a software engineer that loves implementing user interfaces following design guidelines, and I've
+                            been in the web development industry for 3+ years focusing mainly on frontend development in React JS.
+                        </p>
+                        <div>
+                            <a href="mailto:almanzarortizjeffrey@gmail.com" class="btn btn-primary">Contact me</a>
+                            <a target="_blank" href="resume/JeffreyA_Resume.pdf" class="btn btn-dark">Resume</a>
                         </div>
                     </div>
-                
                 </div>
             </div>
-
-
+        </div>
+        <main>
             <!-- **************************************
-                         PROJECTS SECTION
+                        Desktop Tabs
             ************************************** -->
-            <div id="projects-skills" class="group">
-                <h2 class="heading">PROJECTS</h2>
-                
-                <div class="project-container">
-
-                    <!-- PROJECT 1 -->
-                    <div id="pro-1"class="projects">
-
-                        <div class="project-title">
-                            <h3>Goal Management App</h3>
+            <div>
+                <div class="container">
+                    <div class="position-relative">
+                        <div class="photo-container-wrapper position-absolute d-none d-lg-block">
+                            <div class="photo-container">
+                                <img src="/img/hero-photo.png" alt="Jeffrey Almanzar" />
+                            </div>
                         </div>
-
-                        <!-- image -->
-                        <a href="https://github.com/Jeffrey-A/build-your-future-today#preview" target="_blank"><div id="project1" class="project-img">
-                        </div></a>
-
-                        <div class="project-content group">
-                            <div class="project-description">
-                                <p>
-                                    Multi-user goal management system that allows users to create goals, create daily tasks for their goals, and keep track of their progress.
-                                </p>
+                        <!-- Overview -->
+                        <div id="about" class="section">
+                            <h2 class="mb-4">About</h2>
+                            <div class="d-lg-flex align-items-center p-3 my-4 skills-section">
+                                <p class="me-3 mb-3 mb-lg-0">Primary Skills: </p>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <button 
+                                        class="btn btn-dark d-flex justify-content-between align-items-center mb-2 mb-lg-0 me-2"
+                                        data-bs-placement="bottom"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-html="true"
+                                        title="
+                                        <div class='py-3'>
+                                        <p>Proficient in:</p>
+                                        <div class='skills-grid'>
+                                            <span class='btn btn-secondary btn-sm skill'>HTML</span>
+                                            <span class='btn btn-secondary btn-sm skill'>CSS</span>
+                                            <span class='btn btn-secondary btn-sm skill'>JavaScript</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Sass</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Bootstrap 5</span>
+                                            <span class='btn btn-secondary btn-sm skill'>React JS</span>
+                                        </div>
+                                        <p class='mt-3'>Prior experience:</p>
+                                        <div class='skills-grid'>
+                                            <span class='btn btn-secondary btn-sm skill'>TypeScript</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Redux</span>
+                                        </div>
+                                        </div>
+                                        "
+                                        >
+                                        <span class="me-2">Frontend Development</span>
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                    <button 
+                                        class="btn btn-dark d-flex mb-2 mb-lg-0 justify-content-between align-items-center me-2"
+                                        data-bs-placement="bottom"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-html="true"
+                                        title="
+                                        <div class='py-3'>
+                                        <p>Proficient in:</p>
+                                        <div class='skills-grid'>
+                                            <span class='btn btn-secondary btn-sm skill'>Node JS</span>
+                                        </div>
+                                        <p class='mt-3'>Prior experience:</p>
+                                        <div class='skills-grid'>
+                                            <span class='btn btn-secondary btn-sm skill'>Next JS</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Express JS</span>
+                                            <span class='btn btn-secondary btn-sm skill'>PostgreSQL</span>
+                                            <span class='btn btn-secondary btn-sm skill'>MySQL</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Firebase</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Python</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Java</span>
+                                        </div>
+                                        </div>
+                                        "
+                                        >
+                                        <span class="me-2">Backend Development</span>
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                    <button 
+                                        class="btn btn-dark d-flex justify-content-between align-items-center mb-2 mb-lg-0 me-2"
+                                        data-bs-placement="bottom"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-html="true"
+                                        title="
+                                        <div class='py-3'>
+                                        <p>Prior experience:</p>
+                                        <div class='skills-grid'>
+                                            <span class='btn btn-secondary btn-sm skill'>Cypress.io</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Jest.io</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Enzyme</span>
+                                        </div>
+                                        </div>
+                                        "
+                                        >
+                                        <span class="me-2">Testing Tools</span>
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                    <!-- <div class="about-skills-container mb-3">  
+                                        <span class="btn btn-secondary">Node JS</span>
+                                    </div> -->
+                                    <button 
+                                        class="btn btn-dark d-flex justify-content-between align-items-center mb-2 mb-lg-0 me-2"
+                                        data-bs-placement="bottom"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-html="true"
+                                        title="
+                                        <div class='py-3'>
+                                        <p>Familiar with:</p>
+                                        <div class='skills-grid'>
+                                            <span class='btn btn-secondary btn-sm skill'>Adobe XD</span>
+                                            <span class='btn btn-secondary btn-sm skill'>Figma</span>
+                                        </div>
+                                        </div>
+                                        "
+                                        >
+                                        <span class="me-2">Design Tools</span>
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
                             </div>
-
-                            <div class="pro-tools-container">
-                                <p>
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                    <span class="coding-tool">Node JS</span>
-                                    <span class="coding-tool">Express</span>
-                                    <span class="coding-tool skill-tool-off">PostgreSQL</span>
-                                
-                                </p>
-                            </div>
-
-                            <div class="pro-links-container">
-                                <a href="https://github.com/Jeffrey-A/build-your-future-today" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                <a href="https://github.com/Jeffrey-A/build-your-future-today#preview" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- PROJECT 2 -->
-                    <div id="pro-2"class="projects">
-
-                        <div class="project-title">
-                            <h3>E-commerce</h3>
-                        </div>
-
-                        <!-- image -->
-                        <a href="https://valiantshopping.netlify.com/" target="_blank"><div id="project2" class="project-img">
-                        </div></a>
-
-                        <div class="project-content group">
-                            <div class="project-description">
-                                <p>
-                                    Full stack e-commerce with shopping cart functionality, real payment handling and mobile friendly.
-                                </p>
-                            </div>
-
-                            <div class="pro-tools-container">
-                                <p>
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                    <span class="coding-tool">Node JS</span>
-                                    <span class="coding-tool">Express</span>
-                                    <span class="coding-tool skill-tool-off">PostgreSQL</span>
-                                
-                                </p>
-                            </div>
-
-                            <div class="pro-links-container">
-                                <a href="https://github.com/Jeffrey-A/eCommerceProject" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                <a href="https://valiantshopping.netlify.com/" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- PROJECT 3 -->
-                    <div id="pro-3"class="projects">
-                            <div class="project-title">
-                                <h3>City Search</h3>
-                            </div>
-                        <!-- image -->
-                        <a href="https://getcityinfo.netlify.com/" target="_blank"><div id="project3" class="project-img">
-                        </div></a>
-
-                        <div class="project-content group">
-                                <div class="project-description">
-                                    <p>When given a city name, it fetches and displays all the zip codes of the given city and displays information about
-                                        each zip code.
+                            <div class="d-lg-flex justify-content-between">
+                                <div class="about-photo-container mb-3 mb-0">
+                                    <img src="/img/about-image.jpg" alt="Jeffrey Almanzar" />
+                                </div>
+                                <div class="about-text">
+                                    <p>
+                                        Hi, my name is Jeffrey Almanzar, and I’ve been in the web development industry
+                                        for more than three years. You can see a few of the projects that I've
+                                        contributed while working at RubensteinTech, <a target="_blank"
+                                            href="https://www.rubensteintech.com/team/jeffrey-almanzar.html">here</a>.
+                                    </p>
+                                    <p>I learned the basics of programming in college studying computer science. My
+                                        curiosity led me to discover the web development field, and I learned the basics
+                                        of HTML, CSS, and JavaScript on my own.
+                                    </p>
+                                    <p>
+                                        While in college, my web development skills were taken to the next level on an
+                                        intensive
+                                        technical bootcamp focused on full stack JavaScript development. This bootcamp
+                                        helped me
+                                        get my first software engineering internship at Schoology, which helped me get
+                                        another two internships at RubensteinTech,
+                                        where I stayed working full time as software engineer right after completing my
+                                        degree.
+                                    </p>
+                                    <p>
+                                        Thanks to the experience gained at Schoology and RubensteinTech, I found out
+                                        that my
+                                        most fulfillment task is implementing user interfaces following design guidelines.
+                                        Therefore, to better understand users and empathize with them, I completed the
+                                        Google UX
+                                        Design certificate on June 2022.
+                                    </p>
+                                    <p>
+                                        To learn more about me, feel free to contact me, <a target="_blank"
+                                            href="mailto:almanzarortizjeffrey@gmail.com">here</a>.
                                     </p>
                                 </div>
-                            <div class="pro-tools-container">
-                                <p>
-                                    <span class="coding-tool">HTML</span> 
-                                    <span class="coding-tool">CSS</span>  
-                                    <span class="coding-tool">JavaScript</span>
-                                    <span class="coding-tool">React JS</span>
-                                </p>
                             </div>
-
-                            <div class="pro-links-container">
-                                <a href="https://github.com/Jeffrey-A/citySearch" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                <a href="https://getcityinfo.netlify.com/" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
-                            </div>
-
                         </div>
-
-                    </div>
-    
-                    <!-- PROJECT 4-->
-                    <div id="pro-4"class="projects">
-
-                            <div class="project-title">
-                                <h3>Desktop App</h3>
-                            </div>
-
-                            <a href="https://github.com/Jeffrey-A/Euler-Circuit-and-Trail" target="_blank"><div  id="project4"class="project-img">
-                            </div></a>
-    
-                            <div class="project-content group">
-                                    <div class="project-description">
-                                        <p>GUI desktop program that when given a graph (vertices and edges) the program calculates the degree of each vertex and concludes if the graph has a Euler circuit, Euler trail or neither. 
-                                        I created this project using the python 3 programming language and the GUI Tkinter package.
-                                        </p>
+                        <!-- Experience -->
+                        <div id="experience" class="section">
+                            <h2 class="mb-4">Experience</h2>
+                            
+                            <div id="experience-acc">
+                                <h3>RubensteinTech</h3>
+                                <div>
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank" href="https://www.rubensteintech.com/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank" href="https://www.rubensteintech.com/">RubensteinTech</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">Software Engineer</h4>
+                                                <p class="date-location">
+                                                    <span class="location">Remote</span>Jun 2020 - Present
+                                                </p>
+                                                <ul class="description-list">
+                                                    <li>
+                                                        Implement responsive React.js components following
+                                                        sketch mockups.
+                                                    </li>
+                                                    <li>
+                                                        Perform content migration which involves creating
+                                                        Node.js scripts that extract data from the legacy CMS
+                                                        database and export it in JSON and spreadsheet formats.
+                                                        Then, the data is imported into the RubyLaw CMS after
+                                                        following some internal procedures.
+                                                    </li>
+                                                    <li>
+                                                        Utilize HTML, CSS, JavaScript, React.js, Node.js, Sass,
+                                                        and SQL Server.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="position">Software Engineer Intern</h4>
+                                                <p class="date-location">
+                                                    <span class="location">New York, NY</span> Jan 2020 - May
+                                                    2020
+                                                </p>
+                                                <p></p>
+                                                <ul class="description-list">
+                                                    <li>
+                                                        Fixed several web content accessibility issues following
+                                                        the WCAG 2.0 guidelines. For example, made dropdowns,
+                                                        search-boxes/autocomplete menus, and a date-picker more
+                                                        accessible following the ComboBox, ListBox, and Dialog
+                                                        Design patterns.
+                                                    </li>
+                                                    <li>
+                                                        Fixed styling issues on PDF files generated from HTML
+                                                        after upgrading from wkhtmltopdf to Puppeteer.
+                                                    </li>
+                                                    <li>
+                                                        Implemented multiple test suites using Cypress.io.
+                                                    </li>
+                                                    <li>
+                                                        Utilized HTML, CSS, SASS, JavaScript, jQuery,
+                                                        Cypress.io, Perl, Mason.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="position">Software Engineer Intern</h4>
+                                                <p class="date-location">
+                                                    <span class="location">New York, NY</span>Sep 2019 - Dec
+                                                    2019
+                                                </p>
+                                                <ul class="description-list">
+                                                    <li>
+                                                        Taught myself test automation using Cypress.io,
+                                                        leveraged knowledge in Git, CSS, and JavaScript, and use
+                                                        the Chrome Developer Tools for debugging purposes.
+                                                    </li>
+                                                    <li>
+                                                        Helped to improve test execution time by 10 minutes, by
+                                                        finding a secure way to recycle access tokens so that
+                                                        login API calls can be reduced within test cases.
+                                                    </li>
+                                                    <li>
+                                                        Implemented end-to-end tests, ensuring that server-side
+                                                        requests and the UI behave as expected.
+                                                    </li>
+                                                    <li>
+                                                        Documented bugs creating GitLab issues and Trello cards.
+                                                    </li>
+                                                    <li>
+                                                        Utilized JavaScript, Cypress.io, CSS, Git, GitLab,
+                                                        Trello, and the Chrome Developer Tools.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div class="pro-tools-container">
-                                        <p><span class="coding-tool">Python</span></p>
-                                    </div>
+                                </div>
+                                <h3>Schoology</h3>
+                                <div>
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="https://www.powerschool.com/solutions/unified-classroom/schoology-learning/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="https://www.powerschool.com/solutions/unified-classroom/schoology-learning/">Schoology</a>
+                                            </h3>
+                                            <div class="position-container">
+                                                <h4 class="position">Software Engineer Intern</h4>
+                                                <p class="date-location">
+                                                    <span class="location">New York, NY</span>Jun 2019 - Aug
+                                                    2019
+                                                </p>
         
-                                    <div class="pro-links-container">
-                                        <a href="https://github.com/Jeffrey-A/Euler-Circuit-and-Trail" target="_blank"><img class="pro-links-img"src="img/projects-imgs/githubsm.png" alt=""></a>
-                                        <a href="https://github.com/Jeffrey-A/Euler-Circuit-and-Trail" target="_blank"><img class="pro-links-img" src="img/projects-imgs/launched.png" alt=""></a>
+                                                <ul class="description-list">
+                                                    <li>
+                                                        Leveraged knowledge in Git, Front-end web development
+                                                        (HTML, CSS, JavaScript, React.js), improved my
+                                                        communication skills through daily standups, taught
+                                                        myself browser extension development and unit testing
+                                                        libraries such as Jest and Enzyme, and debugged using
+                                                        the Chrome Developer Tools.
+                                                    </li>
+                                                    <li>
+                                                        Developed a browser extension that allows Schoology’s
+                                                        employees to masquerade as external clients. Created it
+                                                        using HTML, CSS, JavaScript, Chrome API, and Schoology
+                                                        APIs.
+                                                    </li>
+                                                    <li>
+                                                        Implemented an autocomplete feature to an existing menu
+                                                        and improved its UI using HTML, CSS, React.js and
+                                                        TypeScript.
+                                                    </li>
+                                                    <li>
+                                                        Wrote unit tests using Jest and Enzyme and used Bamboo
+                                                        to deploy my changes to different environments.
+                                                    </li>
+                                                    <li>
+                                                        Utilized JavaScript, React.js, TypeScript, HTML, CSS,
+                                                        Jest, Enzyme, Git, Jira, Bamboo, and Chrome API.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                                <h3>CUNY Bronx Community College</h3>
+                                <div>
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank" href="http://www.bcc.cuny.edu/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank" href="http://www.bcc.cuny.edu/">CUNY Bronx Community
+                                                    College</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">Computer Science Tutor</h4>
+                                                <p class="date-location">
+                                                    <span class="location">Bronx, NY</span>Aug 2018 - Jun 2019
+                                                </p>
+                                                <ul class="description-list">
+                                                    <li>
+                                                        Helped computer science students with programming I, II,
+                                                        and data structures and algorithms using Python.
+                                                    </li>
+                                                    <li>
+                                                        Helped them to understand fundamental programming
+                                                        concepts, like variables, loops, functions, classes, and
+                                                        more advanced data structures and algorithms concepts.
+                                                    </li>
+                                                    <li>
+                                                        Assisted them in the debugging and implementation of
+                                                        Python’s programs.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 class="position">College Athlete/Baseball Player</h4>
+                                                <p class="date-location">
+                                                    <span class="location">Bronx, NY</span>Feb 2017 - May 2018
+                                                </p>
+                                                <ul class="description-list">
+                                                    <li>
+                                                        Played two consecutive seasons in the Bronx Community
+                                                        College's Baseball Team. We built an amazing chemistry,
+                                                        we trained and played hard, and we made it to the
+                                                        championship game.
+                                                    </li>
+                                                    <li>
+                                                        Honors received:
+                                                        <ul class="description-list">
+                                                            <li>NJCAA Region XV Sportsmanship Honoree 05/2018</li>
+                                                            <li>
+                                                                CUNY-Athletic Conference-Scholar-Athlete award
+                                                                05/2018
+                                                            </li>
+                                                            <li>
+                                                                CUNY-Athletic Conference-Scholar-Athlete award
+                                                                05/2017
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>QSAC (Quality Services for the Autism Community)</h3>
+                                <div>
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank" href="https://www.qsac.com/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank" href="https://www.qsac.com/">QSAC (Quality Services for the
+                                                    Autism Community)</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">Therapy Assistant</h4>
+                                                <p class="date-location">
+                                                    <span class="location">Bronx, NY</span>Nov 2017 - Feb 2018
+                                                </p>
+                                                <ul class="description-list">
+                                                    <li>
+                                                        Assisted a youth group of 5 children in their reading
+                                                        comprehension.
+                                                    </li>
+                                                    <li>
+                                                        Taught life skills such as personal hygiene,
+                                                        socialization skills, recreation, and some academics.
+                                                    </li>
+        
+                                                    <li>
+                                                        Maintained an organized and well-established working
+                                                        environment.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!-- Credentials -->
+                        <div id="credentials" class="section">
+                            <h2 class="mb-3">Credentials</h2>
+                            <div id="credentials-acc">
+                                <h3>Degrees</h3>
+                                <div>
+                                    <!-- Lehman -->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="http://lehman.smartcatalogiq.com/en/2017-2019/Undergraduate-Bulletin/Academic-Departments-and-Programs/Computer-Science/Computer-Science-B-S-57-61-Credit-Major">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="http://lehman.smartcatalogiq.com/en/2017-2019/Undergraduate-Bulletin/Academic-Departments-and-Programs/Computer-Science/Computer-Science-B-S-57-61-Credit-Major">Lehman
+                                                    College (CUNY)</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">
+                                                    Bachelor of Science in Computer Science
+                                                </h4>
+                                                <p class="date-location">2019 - 2020</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BCC -->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">Bronx
+                                                    Community College (CUNY)</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">
+                                                    Associate of Science in Computer Science
+                                                </h4>
+                                                <p class="date-location">2017 - 2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3>Certificates</h3>
+                                <div>
+                                    <!-- Google UX Design Certificate -->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="https://grow.google/certificates/ux-design/#?modal_active=none">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="https://grow.google/certificates/ux-design/#?modal_active=none">Coursera</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">Google UX Design Certificate</h4>
+                                                <p class="date-location">Jun 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Full Stack Web Development  -->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank" href="https://lehmancuny2x.github.io/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank" href="https://lehmancuny2x.github.io/">Tech Talent Pipiline
+                                                    Recidensy Program at Lehman
+                                                    College</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">
+                                                    Full Stack Web Development Certificate
+                                                </h4>
+                                                <p class="date-location">Jun 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3>Honors & awards</h3>
+                                <div>
+                                    <!-- BCC Honor-->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">Bronx
+                                                    Community College</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">Computer Science Award</h4>
+                                                <p class="date-location">
+                                                    May 2019 | Computer Science award for outstanding academic
+                                                    achievement in Computer Science.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Lehman Honor-->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="http://lehman.smartcatalogiq.com/en/2017-2019/Undergraduate-Bulletin/Academic-Departments-and-Programs/Computer-Science/Computer-Science-B-S-57-61-Credit-Major">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="http://lehman.smartcatalogiq.com/en/2017-2019/Undergraduate-Bulletin/Academic-Departments-and-Programs/Computer-Science/Computer-Science-B-S-57-61-Credit-Major">Lehman
+                                                    College</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">
+                                                    Guttman Transfer Scholarship Recipient
+                                                </h4>
+                                                <p class="date-location">Jan 2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BCC Honor-->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">Bronx
+                                                    Community College</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">
+                                                    Bronx Community College Foundation Scholarship Recipient
+                                                </h4>
+                                                <p class="date-location">Sep 2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BCC Honor-->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">Bronx
+                                                    Community College</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">
+                                                    CUNY-Athletic Conference-Scholar-Athlete Award
+                                                </h4>
+                                                <p class="date-location">May 2018</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BCC Honor-->
+                                    <div class="experience d-flex">
+                                        <div class="logo-container">
+                                            <a target="_blank"
+                                                href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">
+                                                <i class="fa-solid fa-building"></i>
+                                            </a>
+                                        </div>
+                                        <div class="experience-content">
+                                            <h3 class="company mb-3">
+                                                <a target="_blank"
+                                                    href="http://www.bcc.cuny.edu/academics/academic-departments/mathematics-and-computer-science-department/degree-certificate-courses/computer-science-as/">Bronx
+                                                    Community College</a>
+                                            </h3>
+                                            <div>
+                                                <h4 class="position">
+                                                    CUNY-Athletic Conference-Scholar-Athlete Award
+                                                </h4>
+                                                <p class="date-location">May 2017</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-    
+                        </div>
+                        <!-- Projects -->
+                        <div id="projects" class="section">
+                            <h2 class="mb-3">Projects</h2>
+                            <div id="projects-skills" class="group">
+                                <div class="project-container">
+                                    <!-- PROJECT 1 -->
+                                    <div id="pro-1" class="projects">
+                                        <div class="project-title">
+                                            <a href="https://github.com/Jeffrey-A/build-your-future-today#preview"
+                                            target="_blank">
+                                            <h3 class="mb-2">Goal Management App</h3>
+                                            </a>
+                                        </div>
+                                        <div class="project-description">
+                                            <p class="lead">
+                                                Multi-user goal management system that allows users to
+                                                create goals, create daily tasks for their goals, and
+                                                keep track of their progress.
+                                            </p>
+                                        </div>
+                                        <div class="project-content group">
+                                            <div class="d-flex project-skils">
+                                                <div class="pro-tools-container">
+                                                    <p>
+                                                        <span class="btn btn-sm btn-light">HTML</span>
+                                                        <span class="btn btn-sm btn-light">CSS</span>
+                                                        <span class="btn btn-sm btn-light">JavaScript</span>
+                                                        <span class="btn btn-sm btn-light">React JS</span>
+                                                        <span class="btn btn-sm btn-light">Node JS</span>
+                                                        <span class="btn btn-sm btn-light">Express</span>
+                                                        <span class="btn btn-sm btn-light">PostgreSQL</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PROJECT 2 -->
+                                    <div id="pro-2" class="projects">
+                                        <div class="project-title">
+                                            <a href="https://github.com/Jeffrey-A/eCommerceProject"
+                                                        target="_blank">
+                                            <h3 class="mb-2">E-commerce</h3>
+                                            </a>
+                                        </div>
+
+                                        <div class="project-description">
+                                            <p class="lead">
+                                                Full stack e-commerce with shopping cart functionality,
+                                                real payment handling and mobile friendly.
+                                            </p>
+                                        </div>
+                                        <div class="project-content group">
+                                            <div class="d-flex">
+                                                <div class="pro-tools-container">
+                                                    <p>
+                                                        <span class="btn btn-sm btn-light">HTML</span>
+                                                        <span class="btn btn-sm btn-light">CSS</span>
+                                                        <span class="btn btn-sm btn-light">JavaScript</span>
+                                                        <span class="btn btn-sm btn-light">React JS</span>
+                                                        <span class="btn btn-sm btn-light">Node JS</span>
+                                                        <span class="btn btn-sm btn-light">Express</span>
+                                                        <span class="btn btn-sm btn-light">PostgreSQL</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PROJECT 3 -->
+                                    <div id="pro-3" class="projects">
+                                        <div class="project-title">
+                                            <a href="https://github.com/Jeffrey-A/citySearch"
+                                                        target="_blank">
+                                            <h3 class="mb-2">City Search</h3>
+                                            </a>
+                                        </div>
+
+                                        <div class="project-description">
+                                            <p class="lead">
+                                                When given a city name, it fetches and displays all the
+                                                zip codes of the given city and displays information
+                                                about each zip code.
+                                            </p>
+                                        </div>
+                                        <div class="project-content group">
+                                            <div class="d-flex">
+                                                <div class="pro-tools-container">
+                                                    <p>
+                                                        <span class="btn btn-sm btn-light">HTML</span>
+                                                        <span class="btn btn-sm btn-light">CSS</span>
+                                                        <span class="btn btn-sm btn-light">JavaScript</span>
+                                                        <span class="btn btn-sm btn-light">React JS</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PROJECT 4-->
+                                    <div id="pro-4" class="projects">
+                                        <div class="project-title">
+                                            <a href="https://github.com/Jeffrey-A/Euler-Circuit-and-Trail" target="_blank">
+                                                <h3 class="mb-2">Desktop App</h3>
+                                            </a>
+                                        </div>
+
+                                        <div class="project-description">
+                                            <p class="lead">
+                                                GUI desktop program that when given a graph (vertices
+                                                and edges) the program calculates the degree of each
+                                                vertex and concludes if the graph has a Euler circuit,
+                                                Euler trail or neither. I created this project using the
+                                                python 3 programming language and the GUI Tkinter
+                                                package.
+                                            </p>
+                                        </div>
+                                        <div class="project-content group">
+                                            <div class="d-flex">
+                                                <div class="pro-tools-container">
+                                                    <p><span class="btn btn-sm btn-light">Python</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-    
-    
-                </div>   
-
-            </div>
-           
-            <!-- **************************************
-                        CONTACT SECTION
-            ************************************** -->
-            <div id="contact">
-                <a href="mailTo:almanzarortizjeffrey@gmail.com">GET IN TOUCH!</a>
-            </div>
-
+                </div>
         </main>
 
-        <footer>
-            <p>&copy; Jeffrey Almanzar</p>
-        </footer>
-        
-
         <!-- boostrap js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
     </body>
+
 </html>
