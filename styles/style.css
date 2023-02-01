@@ -49,11 +49,11 @@ header {
   background-color: #fff;
 }
 
-.test-bg {
+.custom-nav-bg {
   background-color: var(--primary-color);
 }
 
-.test-bg .logo {
+.custom-nav-bg .logo {
   color: #fff;
 }
 
@@ -62,8 +62,8 @@ header {
   color: var(--primary-color) !important;
 }
 
-.test-bg.navbar-light .navbar-nav .nav-link,
-.test-bg.navbar-light .navbar-nav .active {
+.custom-nav-bg.navbar-light .navbar-nav .nav-link,
+.custom-nav-bg.navbar-light .navbar-nav .active {
   color: #fff !important;
 }
 
@@ -434,7 +434,7 @@ header {
   color: var(--primary-color);
 }
 
-.test-bg .navbar-toggler i {
+.custom-nav-bg .navbar-toggler i {
   color: #fff;
 }
 

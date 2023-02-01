@@ -23,7 +23,7 @@ $(document).ready(function () {
   });
 
   //Type js
-  var typed = new Typed("#name", {
+  const typed = new Typed("#name", {
     strings: ["Jeffrey Almanzar."],
     typeSpeed: 90,
     showCursor: false,
@@ -62,27 +62,27 @@ $(document).ready(function () {
   //   distance: "30px"
   // });
 
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
 
 
 
-  window.onscroll = function () { myFunction(); };
+  window.onscroll = function () { addNavBackgroundClass(); };
 
-  let navbar = document.getElementsByClassName("navbar")[0];
-  let sticky = 80;
+  const navbar = document.getElementsByClassName("navbar")[0];
+  const sticky = 80;
 
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("test-bg");
+    navbar.classList.add("custom-nav-bg");
   }
 
-  function myFunction() {
+  function addNavBackgroundClass() {
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add("test-bg");
+      navbar.classList.add("custom-nav-bg");
     } else {
-      navbar.classList.remove("test-bg");
+      navbar.classList.remove("custom-nav-bg");
     }
   }
 });
