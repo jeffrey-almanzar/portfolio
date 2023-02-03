@@ -466,3 +466,7 @@ header {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
+
+.btn:focus {
+  box-shadow: none !important;
+}
