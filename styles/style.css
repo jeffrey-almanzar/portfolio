@@ -322,7 +322,7 @@ header {
     }
 
     50% {
-      top: 200px;
+      top: 120px;
     }
 
     100% {
@@ -336,7 +336,7 @@ header {
     }
 
     50% {
-      top: -80px;
+      top: 120px;
     }
 
     100% {
@@ -348,26 +348,30 @@ header {
     content: "}";
     font-size: 150px;
     position: absolute;
-    right: 50px;
+    right: 80px;
     top: 100px;
     animation-name: right;
     animation-delay: 2s;
-    animation-duration: 8s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
   }
 
   .photo-container::before {
     content: "{";
     font-size: 150px;
     position: absolute;
-    left: 50px;
+    left: 90px;
     top: 100px;
     animation-name: left;
     animation-delay: 2s;
-    animation-duration: 8s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
   }
 
   .photo-container img {
@@ -461,4 +465,8 @@ header {
 .skill {
   background-color: #ffffff !important;
   color: #000000 !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
 }
