@@ -357,9 +357,11 @@ header {
     animation-timing-function: ease-in-out;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    color: #eee;
   }
 
   .photo-container::before {
+    color: #eee;
     content: "{";
     font-size: 150px;
     position: absolute;
