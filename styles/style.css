@@ -32,6 +32,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.primary-skill-label {
+  font-weight: 600;
+}
 
 
 .section {
@@ -405,6 +408,7 @@ header {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: #eee;
+    transition: color 1s;
   }
 
   .photo-container::before {
@@ -421,6 +425,7 @@ header {
     animation-timing-function: ease-in-out;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    transition: color 1s;
   }
 
   .photo-container img {
