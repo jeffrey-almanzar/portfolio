@@ -529,3 +529,7 @@ header {
   background-color: var(--light-gray);
   border-radius: 10px;
 }
+
+ul {
+  padding-left: 1rem;
+}
