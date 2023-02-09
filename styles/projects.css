@@ -28,12 +28,16 @@
 }
 
 .project-content {
-  background-color: #fff;
+  background-color: var(--light-gray);
   width: 100%;
   padding: 10px 0px;
   box-sizing: border-box;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.project-content .btn {
+  border: 1px solid #ddd;
 }
 
 .project-title h3 {
@@ -74,7 +78,7 @@
   padding-top: 7px;
 }
 
-#projects-skills .btn {
+.pro-tools-container .btn {
   /* color: #fff;
   box-sizing: border-box;
   padding: 5px;

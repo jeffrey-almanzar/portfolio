@@ -524,3 +524,8 @@ header {
 .btn:focus {
   box-shadow: none !important;
 }
+
+.projects {
+  background-color: var(--light-gray);
+  border-radius: 10px;
+}
