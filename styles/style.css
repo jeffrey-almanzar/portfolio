@@ -533,3 +533,36 @@ header {
 ul {
   padding-left: 1rem;
 }
+
+.footer {
+  background-color: #070D0D;
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-media-container i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.social-media-container i:hover {
+  color: #000;
+}
+
+.contact-cta {
+  font-size: 25px;
+  padding: 10px 20px;
+  background-color: #fff !important;
+  color: var(--primary-color) !important;
+}
+
+.contact-section {
+  background-color: var(--primary-color);
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+}
