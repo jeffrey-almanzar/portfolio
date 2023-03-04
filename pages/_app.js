@@ -48,8 +48,6 @@ function App({ Component, pageProps }) {
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></Script>
         <Script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></Script>
 
-        {/* type js */}
-        <Script src="js/typed.min.js"></Script>
         {/* scrollreveal */}
         <Script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></Script>
         <Script src="https://kit.fontawesome.com/9718178124.js" crossorigin="anonymous"></Script>
