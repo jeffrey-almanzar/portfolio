@@ -5,7 +5,7 @@ function Hero(props) {
                 <div class="col-lg-7">
                     <div class="hero-content">
                         <p>Hi, my name is</p>
-                        <h1 id="name" class="name"></h1>
+                        <h1 id="my-name" class="name"></h1>
                         <p id="hero-description" class="lead mb-5 hero-description">
                             I’m a software engineer that loves implementing user interfaces following design guidelines,
                             and I've

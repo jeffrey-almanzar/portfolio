@@ -1,10 +1,35 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 
-function Header (props){
+function Header(props) {
+    useEffect(() => {
+        window.addEventListener('scroll', addNavBackgroundClass);
+
+        const navbar = document.getElementsByClassName("navbar")[0];
+        const sticky = 80;
+
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("custom-nav-bg");
+        }
+
+        function addNavBackgroundClass() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("custom-nav-bg");
+            } else {
+                navbar.classList.remove("custom-nav-bg");
+            }
+        }
+
+
+        return () => {
+            window.removeEventListener('scroll', addNavBackgroundClass);
+        }
+    }, [])
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg fixed-top navbar-light">
             <div className="container d-flex justify-content-between">
-                <Link className="logo" href="/">JA</Link>
+                <Link className="logo" href="/">&#123;JA&#125;</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

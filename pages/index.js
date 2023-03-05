@@ -14,25 +14,24 @@ import experienceData from '../data/experience';
 import credentialsData from '../data/credentials';
 import About from '../components/About';
 
-
 export default function Home() {
   useEffect(() => {
-    const typed = new Typed("#name", {
+    const typed = new Typed("#my-name", {
       strings: ["Jeffrey Almanzar."],
       typeSpeed: 90,
       showCursor: false,
       startDelay: 150,
       loop: false
     });
+    return () => { // acts as a component willUnMount
+      typed.destroy();
+    }
   }, []);
 
   return (
     <>
       <Hero />
       <main>
-        {/* <!-- **************************************
-        Desktop Tabs
-            ************************************** --> */}
         <div>
           <div className="container">
             <div className="position-relative">
