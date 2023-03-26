@@ -8,6 +8,20 @@ const poppins = Poppins({
 });
 
 const theme = extendTheme({
+    colors: {
+        brand: {
+            50: "#0048B5",
+            100: "#0048B5",
+            200: "#0048B5",
+            300: "#0048B5",
+            400: "#0048B5",
+            500: "#0048B5",
+            600: "#0048B5",
+            700: "#0048B5",
+            800: "#0048B5",
+            900: "#0048B5",
+        }
+    },
     fonts: {
         body: poppins.style.fontFamily,
         heading: poppins.style.fontFamily,

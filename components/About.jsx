@@ -1,4 +1,4 @@
-import { Heading, Tooltip, Stack } from '@chakra-ui/react';
+import { Heading, Text, Tooltip, Stack } from '@chakra-ui/react';
 
 export default function About(props) {
     return (
@@ -38,17 +38,17 @@ export default function About(props) {
                     <img src="images/about-image.jpeg" alt="Jeffrey Almanzar" />
                 </div>
                 <div className="about-text">
-                    <p className="lead">
+                    <Text fontSize='lg' mb={3}>
                         Hi, my name is Jeffrey Almanzar, and I’ve been in the web development industry
                         for more than three years. You can see a few of the projects that I've
                         contributed while working at RubensteinTech, <a target="_blank"
                             href="https://www.rubensteintech.com/team/jeffrey-almanzar.html">here</a>.
-                    </p>
-                    <p>I learned the basics of programming in college studying computer science. My
+                    </Text>
+                    <Text mb={3}>I learned the basics of programming in college studying computer science. My
                         curiosity led me to discover the web development field, and I learned the basics
                         of HTML, CSS, and JavaScript on my own.
-                    </p>
-                    <p>
+                    </Text>
+                    <Text mb={3}>
                         While in college, my web development skills were taken to the next level on an
                         intensive
                         technical bootcamp focused on full stack JavaScript development. This bootcamp
@@ -57,8 +57,8 @@ export default function About(props) {
                         another two internships at RubensteinTech,
                         where I stayed working full time as software engineer right after completing my
                         degree.
-                    </p>
-                    <p>
+                    </Text>
+                    <Text mb={3}>
                         Thanks to the experience gained at Schoology and RubensteinTech, I found out
                         that my
                         most fulfillment task is implementing user interfaces following design
@@ -66,11 +66,11 @@ export default function About(props) {
                         Therefore, to better understand users and empathize with them, I completed the
                         Google UX
                         Design certificate on June 2022.
-                    </p>
-                    <p>
+                    </Text>
+                    <Text mb={3}>
                         To learn more about me, feel free to contact me, <a target="_blank"
                             href="mailto:almanzarortizjeffrey@gmail.com">here</a>.
-                    </p>
+                    </Text>
                 </div>
             </div>
         </div>
