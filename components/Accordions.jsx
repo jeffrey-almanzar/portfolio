@@ -14,7 +14,7 @@ export default function Accordions({ accordions = [] }) {
                 return (
                     <AccordionItem>
                         <h2>
-                            <AccordionButton>
+                            <AccordionButton outline='none' bg="#f9f9f9">
                                 <Box as="span" flex='1' textAlign='left'>
                                     {accData.heading}
                                 </Box>
