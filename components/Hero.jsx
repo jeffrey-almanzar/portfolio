@@ -1,3 +1,5 @@
+import { Button, ButtonGroup } from '@chakra-ui/react'
+
 function Hero(props) {
     return (
         <div class="container hero-wrapper">
@@ -13,10 +15,8 @@ function Hero(props) {
                             React JS.
                         </p>
                         <div>
-                            <a href="mailto:almanzarortizjeffrey@gmail.com" class="btn btn-hover btn-primary">Contact
-                                me</a>
-                            <a target="_blank" href="JeffreyA_Resume.pdf"
-                                class="btn btn-hover resume-btn">Resume</a>
+                            <Button as='a' href="mailto:almanzarortizjeffrey@gmail.com" me={2}>Contact me</Button>
+                            <Button as='a' href="JeffreyA_Resume.pdf" target='_blank' variant='outline'>Resume</Button>
                         </div>
                     </div>
                 </div>

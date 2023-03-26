@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css';
 
+import { Heading } from '@chakra-ui/react'
+
+
 import React, { useState, useEffect } from 'react';
 import Typed from 'typed.js';
 
@@ -44,17 +47,17 @@ export default function Home() {
               <About />
               {/* <!-- Experience --> */}
               <div id="experience" className="section">
-                <h2 className="mb-4">Experience</h2>
+                <Heading mb={4}>Experience</Heading>
                 <Accordions accordions={experienceData} />
               </div>
               {/* <!-- Credentials --> */}
               <div id="credentials" className="section">
-                <h2 className="mb-3">Credentials</h2>
+                <Heading mb={4}>Credentials</Heading>
                 <Accordions accordions={credentialsData} />
               </div>
               {/* <!-- Projects --> */}
               <div id="projects" className="section">
-                <h2 className="mb-3">Projects</h2>
+                <Heading mb={4}>Projects</Heading>
                 <div id="projects-skills" className="group">
                   <div className="project-container">
                     {/* <!-- PROJECT 0 --> */}
@@ -226,7 +229,7 @@ export default function Home() {
       </main>
       <aside id="contact" className="contact-section section text-center">
         <div className="container">
-          <h2 className="mb-4">Get in Touch</h2>
+          <Heading mb={4}>Get in Touch</Heading>
           <a href="mailto:almanzarortizjeffrey@gmail.com" className="btn btn-hover btn-primary contact-cta">Get into
             my inbox</a>
           <div className="mt-4 social-media-container">
