@@ -29,7 +29,7 @@ a.btn:hover {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 .primary-skill-label {

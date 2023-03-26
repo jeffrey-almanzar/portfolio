@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css';
 
 import { Heading } from '@chakra-ui/react'
-
+import ProjectCard from '@/components/ProjectCard';
 
 import React, { useState, useEffect } from 'react';
 import Typed from 'typed.js';
@@ -61,165 +61,95 @@ export default function Home() {
                 <div id="projects-skills" className="group">
                   <div className="project-container">
                     {/* <!-- PROJECT 0 --> */}
-                    <div id="pro-0" className="projects p-4">
-                      <div className="project-title">
-                        <a href="https://github.com/Jeffrey-A/remotejavascriptjobs#preview" target="_blank">
-                          <h3 className="mb-2">Remote Job Board for JavaScript Developers</h3>
-                        </a>
-                      </div>
-                      <div className="project-description">
-                        <p className="lead">
-                          Advanced remote job board that list JavaScript jobs, allowing the user to filter by employment type, development type, main technology, and salary estimation.  In addition, it allows employers to post job ads after making a payment through the integrated Stripe payment gateway.
-                        </p>
-                        <p className="main-features">Main features</p>
-                        <ul>
-                          <li>Fetches and displays jobs stored in a Firebase real-time database instance.</li>
-                          <li>Allows employers to post job ads after making a payment.</li>
-                          <li>Integrated the Stripe API to handle payments.</li>
-                          <li>Integrated the SendGrid API to send payment confirmation emails.</li>
-                          <li>Setup markdown blog using the gray-matter npm package.</li>
-                          <li>Dark and light theme modes.</li>
-                        </ul>
-                      </div>
-                      <div className="project-content group">
-                        <div className="d-flex project-skils">
-                          <div className="pro-tools-container">
-                            <p>
-                              <span className="btn btn-sm btn-light">HTML</span>
-                              <span className="btn btn-sm btn-light">CSS</span>
-                              <span className="btn btn-sm btn-light">JavaScript</span>
-                              <span className="btn btn-sm btn-light">React JS</span>
-                              <span className="btn btn-sm btn-light">Next JS</span>
-                              <span className="btn btn-sm btn-light">Stripe</span>
-                              <span className="btn btn-sm btn-light">Firebase</span>
-                              <span className="btn btn-sm btn-light">Sendgrid</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <a target="_blank" href="https://github.com/Jeffrey-A/remotejavascriptjobs#preview"
-                        className="btn btn-hover btn-primary">Preview</a>
-                    </div>
+                    <ProjectCard
+                      title="Remote Job Board for JavaScript Developers"
+                      url="https://github.com/Jeffrey-A/remotejavascriptjobs#preview"
+                      leadText="Advanced remote job board that list JavaScript jobs, allowing the user to filter by employment type, development type, main technology, and salary estimation.  In addition, it allows employers to post job ads after making a payment through the integrated Stripe payment gateway."
+                      features={[
+                        'Fetches and displays jobs stored in a Firebase real-time database instance',
+                        'Allows employers to post job ads after making a payment.',
+                        'Integrated the Stripe API to handle payments.',
+                        'Integrated the SendGrid API to send payment confirmation emails.',
+                        'Setup markdown blog using the gray-matter npm package.',
+                        'Dark and light theme modes.',
+                      ]}
+                      skills={[
+                        'HTML',
+                        'CSS',
+                        'JavaScript',
+                        'React JS',
+                        'Next JS',
+                        'Stripe',
+                        'Firebase',
+                        'Sendgrid',
+                      ]}
+                    />
                     {/* <!-- PROJECT 1 --> */}
-                    <div id="pro-1" className="projects p-4">
-                      <div className="project-title">
-                        <a href="https://github.com/Jeffrey-A/build-your-future-today#preview"
-                          target="_blank">
-                          <h3 className="mb-2">Goals Management App</h3>
-                        </a>
-                      </div>
-                      <div className="project-description">
-                        <p className="lead">
-                          Multi-user goals management system that allows users to
-                          create goals, create daily tasks for their goals, and
-                          keep track of their progress.
-                        </p>
-                        <p className="main-features">Main features</p>
-                        <ul>
-                          <li>Allows creating, editing, and deleting goals from the system.</li>
-                          <li>Allows creating, editing, and deleting tasks for each goal.</li>
-                          <li>Implemented a Goal Lister page where you can view all the goals at once or filter by name.</li>
-                          <li>Implemented a drag and drop goals Board using browser native events.</li>
-                          <li>Implemented user authentication, so that a user can create an account and start managing his goals after logging in.</li>
-                        </ul>
-                      </div>
-                      <div className="project-content group">
-                        <div className="d-flex project-skils">
-                          <div className="pro-tools-container">
-                            <p>
-                              <span className="btn btn-sm btn-light">HTML</span>
-                              <span className="btn btn-sm btn-light">CSS</span>
-                              <span className="btn btn-sm btn-light">JavaScript</span>
-                              <span className="btn btn-sm btn-light">React JS</span>
-                              <span className="btn btn-sm btn-light">Node JS</span>
-                              <span className="btn btn-sm btn-light">Express</span>
-                              <span className="btn btn-sm btn-light">PostgreSQL</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <a target="_blank"
-                        href="https://github.com/Jeffrey-A/build-your-future-today#preview"
-                        className="btn btn-hover btn-primary">Preview</a>
-                    </div>
+                    <ProjectCard
+                      title="Goals Management App"
+                      url="https://github.com/Jeffrey-A/build-your-future-today#preview"
+                      leadText="Multi-user goals management system that allows users to
+                      create goals, create daily tasks for their goals, and
+                      keep track of their progress."
+                      features={[
+                        'Allows creating, editing, and deleting goals from the system.',
+                        'Allows creating, editing, and deleting tasks for each goal.',
+                        'Implemented a Goal Lister page where you can view all the goals at once or filter by name.',
+                        'Implemented a drag and drop goals Board using browser native events.',
+                        'Implemented user authentication, so that a user can create an account and start managing his goals after logging in.',
 
+                      ]}
+                      skills={[
+                        'HTML',
+                        'CSS',
+                        'JavaScript',
+                        'React JS',
+                        'Node JS',
+                        'Express',
+                        'PostgreSQL',
+                      ]}
+                    />
                     {/* <!-- PROJECT 2 --> */}
-                    <div id="pro-2" className="projects p-4">
-                      <div className="project-title">
-                        <a href="https://github.com/Jeffrey-A/eCommerceProject#home"
-                          target="_blank">
-                          <h3 className="mb-2">Online Shopping Store for Women</h3>
-                        </a>
-                      </div>
-
-                      <div className="project-description">
-                        <p className="lead">
-                          Full stack e-commerce with shopping cart functionality,
-                          real payment handling and mobile friendly.
-                        </p>
-                        <p className="main-features">Main features</p>
-                        <ul>
-                          <li>Fetches and displays available products stored in a PostgreSQL database.</li>
-                          <li>Implemented shopping cart functionality, allowing the user to add multiple products to the cart, select quantity for each product and display the total price to pay.</li>
-                          <li>Integrated the Stripe API to handle payments.</li>
-                        </ul>
-                      </div>
-                      <div className="project-content group">
-                        <div className="d-flex">
-                          <div className="pro-tools-container">
-                            <p>
-                              <span className="btn btn-sm btn-light">HTML</span>
-                              <span className="btn btn-sm btn-light">CSS</span>
-                              <span className="btn btn-sm btn-light">JavaScript</span>
-                              <span className="btn btn-sm btn-light">React JS</span>
-                              <span className="btn btn-sm btn-light">Node JS</span>
-                              <span className="btn btn-sm btn-light">Express</span>
-                              <span className="btn btn-sm btn-light">PostgreSQL</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <a target="_blank" href="https://github.com/Jeffrey-A/eCommerceProject#home"
-                        className="btn btn-hover btn-primary">Preview</a>
-                    </div>
-
+                    <ProjectCard
+                      title='Online Shopping Store for Women'
+                      url="https://github.com/Jeffrey-A/eCommerceProject#home"
+                      leadText='Full stack e-commerce with shopping cart functionality,
+                      real payment handling and mobile friendly.'
+                      features={[
+                        'Fetches and displays available products stored in a PostgreSQL database.',
+                        'Implemented shopping cart functionality, allowing the user to add multiple products to the cart, select quantity for each product and display the total price to pay.',
+                        'Integrated the Stripe API to handle payments.',
+                      ]}
+                      skills={[
+                        'HTML',
+                        'CSS',
+                        'JavaScript',
+                        'React JS',
+                        'Node JS',
+                        'Express',
+                        'PostgreSQL',
+                      ]}
+                    />
                     {/* <!-- PROJECT 3 --> */}
-                    <div id="pro-3" className="projects p-4">
-                      <div className="project-title">
-                        <a href="https://github.com/Jeffrey-A/citySearch#preview" target="_blank">
-                          <h3 className="mb-2">City Search</h3>
-                        </a>
-                      </div>
-
-                      <div className="project-description">
-                        <p className="lead">
-                          When given a city name, it fetches and displays all the
-                          zip codes of the given city and displays information
-                          about each zip code.
-                        </p>
-                        <p className="main-features">Main features</p>
-                        <ul>
-                          <li>Allows the user to input a city name.</li>
-                          <li>Gets zip code information for the inputted city from a third party API.</li>
-                          <li>Displays all the zip codes for the given city.</li>
-                          <li>Displays state, location, population, and total wages for each zip code.</li>
-                        </ul>
-                      </div>
-                      <div className="project-content group">
-                        <div className="d-flex">
-                          <div className="pro-tools-container">
-                            <p>
-                              <span className="btn btn-sm btn-light">HTML</span>
-                              <span className="btn btn-sm btn-light">CSS</span>
-                              <span className="btn btn-sm btn-light">JavaScript</span>
-                              <span className="btn btn-sm btn-light">React JS</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <a target="_blank" href="https://github.com/Jeffrey-A/citySearch#preview"
-                        className="btn btn-hover btn-primary">Preview</a>
-                    </div>
+                    <ProjectCard
+                      title='City Search'
+                      url="https://github.com/Jeffrey-A/citySearch#preview"
+                      leadText='When given a city name, it fetches and displays all the
+                      zip codes of the given city and displays information
+                      about each zip code.'
+                      features={[
+                        'Allows the user to input a city name.',
+                        'Gets zip code information for the inputted city from a third party API.',
+                        'Displays all the zip codes for the given city.',
+                        'Displays state, location, population, and total wages for each zip code.',
+                      ]}
+                      skills={[
+                        'HTML',
+                        'CSS',
+                        'JavaScript',
+                        'React JS',
+                      ]}
+                    />
                   </div>
                 </div>
               </div>
