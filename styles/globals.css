@@ -405,7 +405,6 @@ header {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: #eee;
     transition: color 1s;
@@ -423,7 +422,6 @@ header {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     transition: color 1s;
   }
