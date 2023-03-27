@@ -47,17 +47,17 @@ export default function Home() {
               <About />
               {/* <!-- Experience --> */}
               <div id="experience" className="section">
-                <Heading mb={4}>Experience</Heading>
+                <Heading mb={5}>Experience</Heading>
                 <Accordions accordions={experienceData} />
               </div>
               {/* <!-- Credentials --> */}
               <div id="credentials" className="section">
-                <Heading mb={4}>Credentials</Heading>
+                <Heading mb={5}>Credentials</Heading>
                 <Accordions accordions={credentialsData} />
               </div>
               {/* <!-- Projects --> */}
               <div id="projects" className="section">
-                <Heading mb={4}>Projects</Heading>
+                <Heading mb={5}>Projects</Heading>
                 <div id="projects-skills" className="group">
                   <div className="project-container">
                     {/* <!-- PROJECT 0 --> */}
@@ -159,7 +159,7 @@ export default function Home() {
       </main>
       <aside id="contact" className="contact-section section text-center">
         <div className="container">
-          <Heading mb={4}>Get in Touch</Heading>
+          <Heading mb={5}>Get in Touch</Heading>
           <a href="mailto:almanzarortizjeffrey@gmail.com" className="btn btn-hover btn-primary contact-cta">Get into
             my inbox</a>
           <div className="mt-4 social-media-container">

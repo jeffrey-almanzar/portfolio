@@ -4,7 +4,8 @@ import {
     AccordionButton,
     AccordionPanel,
     AccordionIcon,
-    Box
+    Box,
+    Text,
 } from '@chakra-ui/react';
 
 export default function Accordions({ accordions = [] }) {
@@ -16,7 +17,7 @@ export default function Accordions({ accordions = [] }) {
                         <h2>
                             <AccordionButton outline='none' bg="#f9f9f9">
                                 <Box as="span" flex='1' textAlign='left'>
-                                    {accData.heading}
+                                   <Text fontSize="xl">{accData.heading}</Text>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
