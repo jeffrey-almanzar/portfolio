@@ -11,9 +11,9 @@ function Test(props) {
                     <a target="_blank"
                         href="https://www.rubensteintech.com/">RubensteinTech</a>
                 </h3>
-                <div>
-                    <h4 className="position">Software Engineer</h4>
-                    <p className="date-location">
+                <div className="mb-3">
+                    <h4 className="position mb-2">Software Engineer</h4>
+                    <p className="date-location mb-1">
                         <span className="location">Remote</span>Jun 2020 - Present
                     </p>
                     <ul className="description-list">
@@ -42,9 +42,9 @@ function Test(props) {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h4 className="position">Software Engineer Intern</h4>
-                    <p className="date-location">
+                <div className="mb-3">
+                    <h4 className="position mb-2">Software Engineer Intern</h4>
+                    <p className="date-location mb-1">
                         <span className="location">New York, NY</span> Jan 2020 - May
                         2020
                     </p>
@@ -70,9 +70,9 @@ function Test(props) {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h4 className="position">Software Engineer Intern</h4>
-                    <p className="date-location">
+                <div className="mb-3">
+                    <h4 className="position mb-2">Software Engineer Intern</h4>
+                    <p className="date-location mb-1">
                         <span className="location">New York, NY</span>Sep 2019 - Dec
                         2019
                     </p>
@@ -119,8 +119,8 @@ function Test2(props) {
                         href="https://www.powerschool.com/solutions/unified-classroom/schoology-learning/">Schoology</a>
                 </h3>
                 <div className="position-container">
-                    <h4 className="position">Software Engineer Intern</h4>
-                    <p className="date-location">
+                    <h4 className="position mb-2">Software Engineer Intern</h4>
+                    <p className="date-location mb-1">
                         <span className="location">New York, NY</span>Jun 2019 - Aug
                         2019
                     </p>
@@ -173,9 +173,9 @@ function Test3(props) {
                     <a target="_blank" href="http://www.bcc.cuny.edu/">CUNY Bronx Community
                         College</a>
                 </h3>
-                <div>
-                    <h4 className="position">Computer Science Tutor</h4>
-                    <p className="date-location">
+                <div className="mb-3">
+                    <h4 className="position mb-2">Computer Science Tutor</h4>
+                    <p className="date-location mb-1">
                         <span className="location">Bronx, NY</span>Aug 2018 - Jun 2019
                     </p>
                     <ul className="description-list">
@@ -195,8 +195,8 @@ function Test3(props) {
                     </ul>
                 </div>
                 <div>
-                    <h4 className="position">College Athlete/Baseball Player</h4>
-                    <p className="date-location">
+                    <h4 className="position mb-2">College Athlete/Baseball Player</h4>
+                    <p className="date-location mb-1">
                         <span className="location">Bronx, NY</span>Feb 2017 - May 2018
                     </p>
                     <ul className="description-list">
@@ -242,8 +242,8 @@ function Test4() {
                         Autism Community)</a>
                 </h3>
                 <div>
-                    <h4 className="position">Therapy Assistant</h4>
-                    <p className="date-location">
+                    <h4 className="position mb-2">Therapy Assistant</h4>
+                    <p className="date-location mb-1">
                         <span className="location">Bronx, NY</span>Nov 2017 - Feb 2018
                     </p>
                     <ul className="description-list">

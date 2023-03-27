@@ -1,4 +1,4 @@
-import { Heading, Text, Button, Stack, UnorderedList, ListItem } from '@chakra-ui/react';
+import { Heading, Text, Button, Stack, UnorderedList, ListItem, Card, CardHeader, CardBody } from '@chakra-ui/react';
 
 export default function ProjectCard(props) {
     const {
@@ -10,31 +10,35 @@ export default function ProjectCard(props) {
     } = props;
 
     return (
-        <div id="pro-0" className="projects p-4">
-            <div className="project-title">
-                <a href={url} target="_blank">
-                    <Heading as="h3" size='md'>{title}</Heading>
-                </a>
-            </div>
-            <div className="project-description mt-2">
-                <Text mb={3} fontSize="lg">
-                    {leadText}
-                </Text>
-                <p className="main-features mb-2">Main features</p>
-                <UnorderedList>
-                    {features.map(feature => <ListItem>{feature}</ListItem>)}
-                </UnorderedList>
-            </div>
-            <div className="project-content group">
-                <div className="d-flex project-skils">
-                    <div className="pro-tools-container">
-                        <p>
-                            {skills.map(skill => <span className="btn btn-sm btn-light">{skill}</span> )}
-                        </p>
+        <Card className="projects p-1">
+            <CardHeader pb={0}>
+                <div className="project-title">
+                    <a href={url} target="_blank">
+                        <Text as="h3" fontSize='2xl' fontWeight="600" >{title}</Text>
+                    </a>
+                </div>
+            </CardHeader>
+            <CardBody pt={2}>
+                <div className="project-description mt-2">
+                    <Text mb={3} fontSize="lg">
+                        {leadText}
+                    </Text>
+                    <p className="main-features mb-2">Main features</p>
+                    <UnorderedList>
+                        {features.map(feature => <ListItem>{feature}</ListItem>)}
+                    </UnorderedList>
+                </div>
+                <div className="project-content group">
+                    <div className="d-flex project-skils">
+                        <div className="pro-tools-container">
+                            <p>
+                                {skills.map(skill => <span className="btn btn-sm btn-light">{skill}</span>)}
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <Button mt={2} colorScheme='brand' as='a' href={url} target='_blank'>Preview</Button>
-        </div>
+                <Button mt={2} colorScheme='brand' as='a' href={url} target='_blank'>Preview</Button>
+            </CardBody>
+        </Card>
     )
 }
