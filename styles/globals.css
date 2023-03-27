@@ -176,10 +176,15 @@ header {
 .logo-container {
   width: 8px;
   margin-right: 20px;
+  padding-top: 5px;
 }
 
 .logo-container i {
   font-size: 15px;
+}
+
+.logo-container i::before {
+  color: #E0E0E0;
 }
 
 .date-location {
@@ -326,11 +331,11 @@ header {
   }
 
   .logo-container i {
-    font-size: 30px;
+    font-size: 23px;
   }
 
   .logo-container {
-    width: 48px;
+    width: 27px;
   }
 
   .hero-content {
