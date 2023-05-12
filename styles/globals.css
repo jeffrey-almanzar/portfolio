@@ -699,3 +699,8 @@ ul {
     width: 30%;
   }
 }
+
+.chakra-button:hover,
+.chakra-button:hover a:hover {
+  color: #fff;
+}

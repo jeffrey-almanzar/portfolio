@@ -79,7 +79,7 @@ export default function About(props) {
 
 function FrontendSkills(props) {
     return (
-        <div className='py-3'>
+        <div className='p-3'>
             <p>Proficient in:</p>
             <div className='skills-grid'>
                 <span className='btn btn-secondary btn-sm skill'>HTML</span>
@@ -102,7 +102,7 @@ function FrontendSkills(props) {
 
 function BackendSkills(props) {
     return (
-        <div className='py-3'>
+        <div className='p-3'>
             <p>Proficient in:</p>
             <div className='skills-grid'>
                 <span className='btn btn-secondary btn-sm skill'>Node JS</span>
@@ -123,7 +123,7 @@ function BackendSkills(props) {
 
 function TestingSkills(props) {
     return (
-        <div className='py-3'>
+        <div className='p-3'>
             <p>Prior experience:</p>
             <div className='skills-grid'>
                 <span className='btn btn-secondary btn-sm skill'>Cypress.io</span>
@@ -136,7 +136,7 @@ function TestingSkills(props) {
 
 function DesignSkills(props) {
     return (
-        <div className='py-3'>
+        <div className='p-3'>
             <p>Familiar with:</p>
             <div className='skills-grid'>
                 <span className='btn btn-secondary btn-sm skill'>Adobe XD</span>
