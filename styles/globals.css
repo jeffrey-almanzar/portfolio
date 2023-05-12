@@ -660,6 +660,8 @@ ul {
   padding: 5px;
   border-radius: 5px; */
   cursor: default !important;
+  margin: 5px;
+  margin-left: 0px;
 }
 
 .coding-tool {
