@@ -1,7 +1,7 @@
 ---
-title: "This is an example post"
+title: "This is an example post 8"
 author: "Alex Merced"
-category: "example"
+category: "Web Development"
 date: "2022-03-13"
 bannerImage: "url-to-image.png"
 tags:

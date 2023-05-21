@@ -14,6 +14,10 @@ body {
   overflow-x: hidden;
 }
 
+.header-shim {
+  margin-top: 56px;
+}
+
 a {
   cursor: pointer;
   color: var(--primary-color);

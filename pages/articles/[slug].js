@@ -2,18 +2,39 @@ import fs from "fs";
 import matter from "gray-matter";
 import md from 'markdown-it';
 
+import Link from "next/link";
+
+import {
+  Heading,
+  Divider,
+} from '@chakra-ui/react';
+
 // The page for each post
-export default function Post({frontmatter, content}) {
+export default function Post({ frontmatter, content }) {
 
-    const {title, author, category, date, bannerImage, tags} = frontmatter
+  const { title, author, category, date, bannerImage, tags } = frontmatter
 
-    return <main>
-        <img src={bannerImage}/>
-        <h1>{title}</h1>
-        <h2>{author} || {date}</h2>
-        <h3>{category} || {tags.join()}</h3>
-        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+  return (
+    <main>
+      <div className="container py-5">
+        <div className="pb-2">
+          <Link href='/articles'>
+            <span>Articles</span>
+          </Link>
+        </div>
+
+        <div className="article-header mb-4">
+          <Heading as="h1" size="lg">{title}</Heading>
+          <div className="d-flex pt-2">
+            <p className="pe-3">{date}</p>
+            <p>{category}</p>
+          </div>
+        </div>
+        <Divider style={{backgroundColor: 'transparent'}} />
+        <div className="pt-5" dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      </div>
     </main>
+  );
 }
 
 // Generating the paths for each post
@@ -44,4 +65,4 @@ export async function getStaticProps({ params: { slug } }) {
         content,
       },
     };
-  }
+}
