@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 // The Blog Page Content
 export default function Blog({posts}){
+    console.log({posts})
     return <main>
         {posts.map(post => {
             //extract slug and frontmatter
@@ -13,7 +14,7 @@ export default function Blog({posts}){
 
             //JSX for individual blog listing
             return <article key={title}>
-                <Link href={`/blog/articles/${slug}`}>
+                <Link href={`/articles/${slug}`}>
                     <h1>{title}</h1>
                 </Link>
                 <h3>{author}</h3>
