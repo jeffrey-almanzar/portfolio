@@ -42,7 +42,7 @@ export default function About(props) {
                         Hi, my name is Jeffrey Almanzar, and I’ve been in the web development industry
                         for more than three years. You can see a few of the projects that I've
                         contributed while working at RubensteinTech, <a target="_blank"
-                            href="https://www.rubensteintech.com/team/jeffrey-almanzar.html">here</a>.
+                            href="https://www.rubensteintech.com/work/index.html">here</a>.
                     </Text>
                     <Text mb={3}>I learned the basics of programming in college studying computer science. My
                         curiosity led me to discover the web development field, and I learned the basics
