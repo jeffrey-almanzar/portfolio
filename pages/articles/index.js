@@ -1,51 +1,84 @@
-import fs from 'fs';
-import matter from 'gray-matter';
-import Link from 'next/link';
+import fs from "fs";
+import matter from "gray-matter";
+import Link from "next/link";
+import {
+    Heading,
+    TableContainer,
+    Table,
+    Thead,
+    Tr,
+    Th,
+    Tbody,
+    Td,
+    Tfoot,
+} from '@chakra-ui/react'
 
-// The Blog Page Content
-export default function Blog({posts}){
-    console.log({posts})
-    return <main>
-        {posts.map(post => {
-            //extract slug and frontmatter
-            const {slug, frontmatter} = post
-            //extract frontmatter properties
-            const {title, author, category, date, bannerImage, tags} = frontmatter
+export default function Blog({ posts }) {
+    return (
+        <main>
+            <div className="container py-5">
+                <Heading as="h1" size="lg">Articles</Heading>
+                <div className="mt-4 mb-5">
+                    <TableContainer>
+                        <Table variant='simple'>
+                            <Thead>
+                                <Tr>
+                                    <Th>Date</Th>
+                                    <Th>Name</Th>
+                                    <Th>Category</Th>
+                                </Tr>
+                            </Thead>
+                            <Tbody>
+                                {posts.map((post) => {
 
-            //JSX for individual blog listing
-            return <article key={title}>
-                <Link href={`/articles/${slug}`}>
-                    <h1>{title}</h1>
-                </Link>
-                <h3>{author}</h3>
-                <h3>{date}</h3>
-            </article>
-        })}
-    </main>
+                                    const { slug, frontmatter } = post;
+
+                                    const { title, author, category, date, bannerImage, tags } =
+                                        frontmatter;
+
+                                    return (
+                                        <Tr key={title}>
+                                            <Td>{date}</Td>
+                                            <Td>
+                                                <Link href={`/articles/${slug}`}>
+                                                    {title}
+                                                </Link>
+                                            </Td>
+
+                                            <Td>{category}</Td>
+                                        </Tr>
+                                    );
+                                })}
+                            </Tbody>
+                        </Table>
+                    </TableContainer>
+                </div>
+            </div>
+        </main>
+    );
 }
 
-
 //Generating the Static Props for the Blog Page
-export async function getStaticProps(){
+export async function getStaticProps() {
     // get list of files from the posts folder
-    const files = fs.readdirSync('articles');
+    const files = fs.readdirSync("articles");
 
     // get frontmatter & slug from each post
     const posts = files.map((fileName) => {
-        const slug = fileName.replace('.md', '');
-        const readFile = fs.readFileSync(`articles/${fileName}`, 'utf-8');
+        const slug = fileName.replace(".md", "");
+        const readFile = fs.readFileSync(`articles/${fileName}`, "utf-8");
         const { data: frontmatter } = matter(readFile);
 
         return {
-          slug,
-          frontmatter,
+            slug,
+            frontmatter,
         };
     });
 
     // Return the pages static props
     return {
         props: {
-          posts,
+            posts,
         },
     };
 }
