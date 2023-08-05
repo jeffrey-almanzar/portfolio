@@ -9,10 +9,7 @@ function Hero(props) {
                         <p>Hi, my name is</p>
                         <Heading mt={2} id="my-name" className="name"></Heading>
                         <Text fontSize='xl' className="mb-5 hero-description">
-                            I’m a software engineer that loves implementing user interfaces following design guidelines,
-                            and I've
-                            been in the web development industry for 3+ years focusing mainly on frontend development in
-                            React JS.
+                        I'm a software engineer that loves bringing design to life. While working at RubinsteinTech, I've contributed to more than 8 live projects using React, Node and other technologies.    
                         </Text>
                         <div>
                             <Button colorScheme='brand' as='a' href="mailto:almanzarortizjeffrey@gmail.com" me={2}>Contact me</Button>
