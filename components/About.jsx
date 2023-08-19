@@ -39,33 +39,16 @@ export default function About(props) {
                 </div>
                 <div className="about-text">
                     <Text fontSize='lg' mb={3}>
-                        Hi, my name is Jeffrey Almanzar, and I’ve been in the web development industry
+                        I’ve been in the web development industry
                         for more than three years. You can see a few of the projects that I've
                         contributed while working at RubensteinTech, <a target="_blank"
                             href="https://www.rubensteintech.com/work/index.html">here</a>.
                     </Text>
-                    <Text mb={3}>I learned the basics of programming in college studying computer science. My
-                        curiosity led me to discover the web development field, and I learned the basics
-                        of HTML, CSS, and JavaScript on my own.
+                    <Text mb={3}>
+                    Throughout my web development journey, I've technically led 3 projects so far at RubensteinTech. Helping less experienced developers resolve technical problems when they are stuck in a given task, performing code reviews to maintain code quality and spot bugs before they are introduced. And most importantly, putting in the necessary work to make sure that we deliver the project on time.
                     </Text>
                     <Text mb={3}>
-                        While in college, my web development skills were taken to the next level on an
-                        intensive
-                        technical bootcamp focused on full stack JavaScript development. This bootcamp
-                        helped me
-                        get my first software engineering internship at Schoology, which helped me get
-                        another two internships at RubensteinTech,
-                        where I stayed working full time as software engineer right after completing my
-                        degree.
-                    </Text>
-                    <Text mb={3}>
-                        Thanks to the experience gained at Schoology and RubensteinTech, I found out
-                        that my
-                        most fulfillment task is implementing user interfaces following design
-                        guidelines.
-                        Therefore, to better understand users and empathize with them, I completed the
-                        Google UX
-                        Design certificate on June 2022.
+                        While I have full stack JavaScript development experience, my forte is frontend development. I have experience resolving web accessibility, browser compatibility, and front-end performing issues. In addition, I'm good in responsive web design and have developed a strong eye for design throughout my experience and education. Furthermore,  I also have experience in end-to-end testing using Cypress.io and unit testing using Jest.
                     </Text>
                     <Text mb={3}>
                         To learn more about me, feel free to contact me, <a target="_blank"
