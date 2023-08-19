@@ -80,8 +80,8 @@ function Test2(props) {
                 <div className="experience-content">
                     <h3 className="company mb-2">
                         <a target="_blank" href="https://lehmancuny2x.github.io/">Tech Talent
-                            Pipiline
-                            Recidensy Program at Lehman
+                            Pipeline
+                            Residency Program at Lehman
                             College</a>
                     </h3>
                     <div>
