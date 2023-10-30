@@ -45,15 +45,17 @@ export default function About(props) {
                             href="https://www.rubensteintech.com/work/index.html">here</a>.
                     </Text>
                     <Text mb={3}>
-                    Throughout my web development journey, I've technically led 3 projects so far at RubensteinTech. Helping less experienced developers resolve technical problems when they are stuck in a given task, performing code reviews to maintain code quality and spot bugs before they are introduced. And most importantly, putting in the necessary work to make sure that we deliver the project on time.
+                        Throughout my web development journey, I've technically led 3 projects so far at RubensteinTech. Helping less experienced developers resolve technical problems when they are stuck in a given task, performing code reviews to maintain code quality and spotting bugs before they are introduced. And most importantly, putting in the necessary work to make sure that we deliver the project on time.
                     </Text>
                     <Text mb={3}>
                         While I have full stack JavaScript development experience, my forte is frontend development. I have experience resolving web accessibility, browser compatibility, and front-end performing issues. In addition, I'm good in responsive web design and have developed a strong eye for design throughout my experience and education. Furthermore,  I also have experience in end-to-end testing using Cypress.io and unit testing using Jest.
                     </Text>
-                    <Text mb={3}>
-                        To learn more about me, feel free to contact me, <a target="_blank"
-                            href="mailto:almanzarortizjeffrey@gmail.com">here</a>.
-                    </Text>
+                    <div className="mt-4 social-media-container--light">
+                        <a className="d-inline-block me-3" target="_blank" href="https://github.com/Jeffrey-A"><i
+                            className="fa-brands fa-github me-2"></i>GitHub</a>
+                        <a className="d-inline-block" target="_blank" href="https://www.linkedin.com/in/jeffrey-almanzar/"><i
+                            className="fa-brands fa-linkedin me-2"></i>LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>
