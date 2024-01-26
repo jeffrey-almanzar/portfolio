@@ -9,36 +9,27 @@ function Test(props) {
             <div className="experience-content">
                 <h3 className="company mb-3">
                     <a target="_blank"
-                        href="https://www.rubensteintech.com/">RubensteinTech</a>
+                        href="https://www.rubensteintech.com/">RubyLaw</a>
                 </h3>
+                <div className="mb-3">
+                    <h4 className="position mb-2">Software Engineer II</h4>
+                    <p className="date-location mb-1">
+                        <span className="location">Remote</span>Apr 2023 - Present
+                    </p>
+                    <ul className="description-list">
+                        <li>Provide technical assistance to other engineers when they need help, and act as a point of contact for client experience representatives, project managers, and other team members. In addition, I also lead 2 internal meetings once a month, and perform code reviews.</li>
+                        <li>Implement design mockups using frontend development technologies (HTML, CSS, SASS, and React.js). This involves implementing foundational styles such as typography, icons, and layouts. As well as implementing components such as headers, footers, banners, and others. Then everything is put together, implementing fully functional templates. Furthermore, I implement content migration scripts using node.js to fix data issues and to migrate data from third party databases into RubyLaw data stores. Finally, when I’m in the client experience team, I handle client requests such as fixing bugs or implementing new features on a timely manner.</li>
+                    </ul>
+                </div>
                 <div className="mb-3">
                     <h4 className="position mb-2">Software Engineer</h4>
                     <p className="date-location mb-1">
-                        <span className="location">Remote</span>Jun 2020 - Present
+                        <span className="location">Remote</span> Jun 2020 - Apr 2023
                     </p>
+                    <p></p>
                     <ul className="description-list">
-                        <li>Help less experienced developers resolve technical problems when
-                            they are stuck in a given task.</li>
-                        <li>Perform code reviews to maintain code quality, spot bugs before
-                            they are introduced, and help less experienced developers get
-                            more familiar with the code base.</li>
-                        <li>Implement foundational styles such as typography, iconography,
-                            color palettes, layout and others, following design guidelines.
-                        </li>
-                        <li>Implement responsive React.js components following mockups.
-                            Then, I test and document them using Storybook.</li>
-                        <li>Implement responsive React.js templates using the foundational
-                            styles and individual components.</li>
-                        <li>Implement printer friendly styles to ensure that pages look good
-                            when printed.</li>
-                        <li>Perform accessibility audits using Pa11y and resolve the errors
-                            found.</li>
-                        <li>Perform content migration, which involves creating Node.js
-                            scripts to extra the data from the legacy database and import it
-                            into the RubensteinTech&rsquo;s database.</li>
                         <li>
-                            Utilize HTML, CSS, JavaScript, React.js, Sass, Storybook,
-                            Node.js, ElasticSearch, Git, and more tools.
+                            Led 3 projects from start to finish, performed 3 content migrations, and contributed to more than 8 live projects. My contributions include frontend development tasks, such as implementing dozens of components, foundational styles, and implementing fully functional templates using React.js following design mockups. In addition, I implemented node.js scripts to export, transform, and import data. And I also performed WCAG 2.0 accessibility audits using Pa11y and resolved the errors found.
                         </li>
                     </ul>
                 </div>
@@ -51,22 +42,7 @@ function Test(props) {
                     <p></p>
                     <ul className="description-list">
                         <li>
-                            Fixed several web content accessibility issues following
-                            the WCAG 2.0 guidelines. For example, made dropdowns,
-                            search-boxes/autocomplete menus, and a date-picker more
-                            accessible following the ComboBox, ListBox, and Dialog
-                            Design patterns.
-                        </li>
-                        <li>
-                            Fixed styling issues on PDF files generated from HTML
-                            after upgrading from wkhtmltopdf to Puppeteer.
-                        </li>
-                        <li>
-                            Implemented multiple test suites using Cypress.io.
-                        </li>
-                        <li>
-                            Utilized HTML, CSS, SASS, JavaScript, jQuery,
-                            Cypress.io, Perl, Mason.
+                            Fixed styling issues on server-side generated PDFs after RubyLaw upgraded its PDF generation engine from wkhtmltopdf to Puppeteer. I also fixed several web content accessibility issues on bclplaw.com following the WCAG 2.0 guidelines. To illustrate, I followed the ComboBox, ListBox, and Dialog patterns to fix dropdowns, a search box, and a date picker.
                         </li>
                     </ul>
                 </div>
@@ -78,25 +54,7 @@ function Test(props) {
                     </p>
                     <ul className="description-list">
                         <li>
-                            Taught myself test automation using Cypress.io,
-                            leveraged knowledge in Git, CSS, and JavaScript, and use
-                            the Chrome Developer Tools for debugging purposes.
-                        </li>
-                        <li>
-                            Helped to improve test execution time by 10 minutes, by
-                            finding a secure way to recycle access tokens so that
-                            login API calls can be reduced within test cases.
-                        </li>
-                        <li>
-                            Implemented end-to-end tests, ensuring that server-side
-                            requests and the UI behave as expected.
-                        </li>
-                        <li>
-                            Documented bugs creating GitLab issues and Trello cards.
-                        </li>
-                        <li>
-                            Utilized JavaScript, Cypress.io, CSS, Git, GitLab,
-                            Trello, and the Chrome Developer Tools.
+                            Implemented dozens of test suites, and improved the execution time by 10 minutes, finding a way to cache the access token so that only one login API call is required per test suite. I needed to teach myself Cypress.io, use Chrome DevTools heavenly for debugging purposes, and leveraged my knowledge in HTML, CSS, JavaScript, and Git.
                         </li>
                     </ul>
                 </div>
@@ -127,31 +85,10 @@ function Test2(props) {
 
                     <ul className="description-list">
                         <li>
-                            Leveraged knowledge in Git, Front-end web development
-                            (HTML, CSS, JavaScript, React.js), improved my
-                            communication skills through daily standups, taught
-                            myself browser extension development and unit testing
-                            libraries such as Jest and Enzyme, and debugged using
-                            the Chrome Developer Tools.
+                            Developed a browser extension that allows Schoology’s employees to log in as external clients in the company’s learning management system to better assist clients when they run into issues. I needed to get familiar with the Chrome Extension API, Schoology API, and leveraged my frontend development knowledge (HTML, CSS, and JavaScript).
                         </li>
                         <li>
-                            Developed a browser extension that allows Schoology’s
-                            employees to masquerade as external clients. Created it
-                            using HTML, CSS, JavaScript, Chrome API, and Schoology
-                            APIs.
-                        </li>
-                        <li>
-                            Implemented an autocomplete feature to an existing menu
-                            and improved its UI using HTML, CSS, React.js and
-                            TypeScript.
-                        </li>
-                        <li>
-                            Wrote unit tests using Jest and Enzyme and used Bamboo
-                            to deploy my changes to different environments.
-                        </li>
-                        <li>
-                            Utilized JavaScript, React.js, TypeScript, HTML, CSS,
-                            Jest, Enzyme, Git, Jira, Bamboo, and Chrome API.
+                            Improved the UI/UX of an existing search box in Schoology’s learning management system by adding an autocomplete feature. I needed to learn TypeScript, unit testing using Jest and Enzyme, and how to deploy my changes to the staging and production environments.Developed a browser extension that allows Schoology’s employees to log in as external clients in the company’s learning management system to better assist clients when they run into issues. I needed to get familiar with the Chrome Extension API, Schoology API, and leveraged my frontend development knowledge (HTML, CSS, and JavaScript). Improved the UI/UX of an existing search box in Schoology’s learning management system by adding an autocomplete feature. I needed to learn TypeScript, unit testing using Jest and Enzyme, and how to deploy my changes to the staging and production environments.
                         </li>
                     </ul>
                 </div>
@@ -269,7 +206,7 @@ function Test4() {
 
 const data = [
     {
-        heading: 'RubensteinTech',
+        heading: 'RubyLaw',
         content: <Test />,
     },
     {
@@ -280,10 +217,6 @@ const data = [
         heading: 'CUNY Bronx Community College',
         content: <Test3 />,
     },
-    {
-        heading: 'QSAC (Quality Services for the Autism Community)',
-        content: <Test4 />,
-    }
 ];
 
 export default data;
