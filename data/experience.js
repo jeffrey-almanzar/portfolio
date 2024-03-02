@@ -17,8 +17,8 @@ function Test(props) {
                         <span className="location">Remote</span>Apr 2023 - Present
                     </p>
                     <ul className="description-list">
-                        <li>Provide technical assistance to other engineers when they need help, and act as a point of contact for client experience representatives, project managers, and other team members. In addition, I also lead 2 internal meetings once a month, and perform code reviews.</li>
                         <li>Implement design mockups using frontend development technologies (HTML, CSS, SASS, and React.js). This involves implementing foundational styles such as typography, icons, and layouts. As well as implementing components such as headers, footers, banners, and others. Then everything is put together, implementing fully functional templates. Furthermore, I implement content migration scripts using node.js to fix data issues and to migrate data from third party databases into RubyLaw data stores. Finally, when I’m in the client experience team, I handle client requests such as fixing bugs or implementing new features on a timely manner.</li>
+                        <li>Provide technical assistance to other engineers when they need help, and act as a point of contact for client experience representatives, project managers, and other team members. In addition, I also lead 2 internal meetings once a month, and perform code reviews.</li>
                     </ul>
                 </div>
                 <div className="mb-3">
