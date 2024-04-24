@@ -73,6 +73,7 @@ function FrontendSkills(props) {
                 <span className='btn btn-secondary btn-sm skill'>Sass</span>
                 <span className='btn btn-secondary btn-sm skill'>Bootstrap 5</span>
                 <span className='btn btn-secondary btn-sm skill'>React JS</span>
+                <span className='btn btn-secondary btn-sm skill'>Git</span>
             </div>
             <p className='mt-3'>Prior experience:</p>
             <div className='skills-grid'>
