@@ -51,7 +51,25 @@ function Test(props) {
 function Test2(props) {
     return (
         <div>
-            {/* <!-- Google UX Design Certificate --> */}
+            {/* <!-- Google Certificates --> */}
+            <div className="experience d-flex mb-3">
+                <div className="logo-container">
+                    <a target="_blank"
+                        href="https://grow.google/certificates/cybersecurity">
+                        <i className="fa-solid fa-building"></i>
+                    </a>
+                </div>
+                <div className="experience-content">
+                    <h3 className="company mb-2">
+                        <a target="_blank"
+                            href="https://grow.google/certificates/cybersecurity/">Coursera</a>
+                    </h3>
+                    <div>
+                        <h4 className="position mb-2">Google Cybersecurity Certificate</h4>
+                        <p className="date-location">Sep 2023</p>
+                    </div>
+                </div>
+            </div>
             <div className="experience d-flex mb-3">
                 <div className="logo-container">
                     <a target="_blank"
