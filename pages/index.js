@@ -56,7 +56,7 @@ export default function Home() {
               </div>
               {/* <!-- Projects --> */}
               <div id="projects" className="section">
-                <Heading mb={5}>Projects</Heading>
+                <Heading mb={5}>Personal Projects</Heading>
                 <div id="projects-skills" className="group">
                   <div className="project-container">
                     {/* <!-- PROJECT 0 --> */}
