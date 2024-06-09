@@ -102,12 +102,21 @@ header {
   background-color: #fff;
 }
 
+.nav-social-media-container {
+  display: none;
+}
+
 .custom-nav-bg {
   background-color: var(--primary-color);
 }
 
 .custom-nav-bg .logo {
   color: #fff;
+}
+
+.custom-nav-bg .nav-social-media-container {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -354,7 +363,7 @@ header {
 
   .photo-container-wrapper {
     width: 500px;
-    top: -378px;
+    top: -374px;
     right: 0;
   }
 
@@ -461,6 +470,10 @@ header {
 
   .about-text {
     max-width: 60%;
+  }
+
+  .about-text a {
+    text-decoration: underline;
   }
 
   .about-photo-container {
