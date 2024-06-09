@@ -40,7 +40,7 @@ export default function About(props) {
                 <div className="about-text">
                     <Text fontSize='lg' mb={3}>
                         Throughout my web development journey, I've technically led 4 projects so far at RubyLaw, performed 5 content migrations, and have contributed to almost all their <a target="_blank"
-                            href="https://www.rubylaw.com/work/index.html">clients</a>. My contributions include leading the implementation of new web applications, implementing design mockups, doing system integrations, fixing web accessibility issues, mentoring other engineers, maintaining existing projects, and developing content migration scripts for new clients. 
+                            href="https://www.rubylaw.com/work/index.html">clients</a>. My contributions include leading the implementation of new web applications, implementing design mockups, doing system integrations, fixing web accessibility issues, mentoring other engineers, maintaining existing projects, and developing content migration scripts for new clients.
                     </Text>
                     <Text mb={3}>
                         While I have full stack JavaScript development experience, my forte is frontend development. I have experience resolving web accessibility, browser compatibility, and front-end performing issues. In addition, I'm good in responsive web design and have developed a strong eye for design throughout my experience and education. Furthermore,  I also have experience in end-to-end testing using Cypress.io and unit testing using Jest.
