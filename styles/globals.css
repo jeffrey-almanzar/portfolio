@@ -338,6 +338,10 @@ header {
   white-space: nowrap;
 }
 
+.scroll-progress-bar {
+  top: 55px;
+}
+
 @media (min-width: 768px) {
   .hero-description {
     margin-top: 90px;
@@ -464,6 +468,10 @@ header {
 }
 
 @media (min-width: 992px) {
+  .scroll-progress-bar {
+    top: 56px;
+  }
+
   .photo-container {
     height: 440px;
   }

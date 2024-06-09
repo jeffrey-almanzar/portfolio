@@ -1,4 +1,75 @@
 import { Heading, Text, Tooltip, Stack } from '@chakra-ui/react';
+import Accordions from './Accordions';
+
+const skills = [
+    {
+        label: 'Fronted Development',
+        proficient: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'Sass',
+            'Bootstrap 5',
+            'React JS',
+            'Git',
+        ],
+        experienced: [
+            'TypeScript',
+            'Redux',
+            'Storybook',
+            'jQuery',
+        ],
+    },
+    {
+        label: 'Backend Development',
+        proficient: [
+            'Node JS',
+            'Next JS',
+            'Firebase',
+        ],
+        experienced: [
+            'Express JS',
+            'PostgreSQL',
+            'MySQL',
+            'Python',
+            'Java'
+        ],
+    },
+    {
+        label: 'Testing Tools',
+        proficient: [],
+        experienced: [
+            'Cypress.io',
+            'Jest.io',
+            'Enzyme'
+        ],
+    },
+    {
+        label: 'Design Tools',
+        proficient: [],
+        experienced: [
+            'Adobe XD',
+            'Figma',
+        ],
+    },
+];
+
+function SkillsAccordionContent({ proficient = [], experienced = [] }) {
+    return (
+        <div className='skills-grid'>
+            {[...proficient, ...experienced].map(skill => (
+                <span className='btn btn-secondary btn-sm skill'>{skill}</span>
+            ))}
+        </div>
+    );
+}
+
+const mobileSkills = skills.map((skill) => {
+    return ({
+        heading: skill.label,
+        content: <SkillsAccordionContent {...skill} />
+    })
+});
 
 export default function About(props) {
     return (
@@ -6,32 +77,37 @@ export default function About(props) {
             <Heading mb={4}>About</Heading>
             <div className="d-lg-flex align-items-center p-3 my-4 skills-section">
                 <p className="me-3 mb-3 mb-lg-0 primary-skill-label">Primary Skills: </p>
-                <Stack align="flex-start" justify="flex-start" direction={['column', 'row']} spacing='24px'>
-                    <Tooltip hasArrow label={<FrontendSkills />}>
-                        <button>
-                            <span className="me-2">Frontend Development</span>
-                            <i className="fa-solid fa-circle-info"></i>
-                        </button>
-                    </Tooltip>
-                    <Tooltip hasArrow label={<BackendSkills />}>
-                        <button>
-                            <span className="me-2">Backend Development</span>
-                            <i className="fa-solid fa-circle-info"></i>
-                        </button>
-                    </Tooltip>
-                    <Tooltip hasArrow label={<TestingSkills />}>
-                        <button>
-                            <span className="me-2">Testing Tools</span>
-                            <i className="fa-solid fa-circle-info"></i>
-                        </button>
-                    </Tooltip>
-                    <Tooltip hasArrow label={<DesignSkills />}>
-                        <button>
-                            <span className="me-2">Design Tools</span>
-                            <i className="fa-solid fa-circle-info"></i>
-                        </button>
-                    </Tooltip>
-                </Stack>
+                <div className='d-none d-lg-block'>
+                    <Stack align="flex-start" justify="flex-start" direction={['column', 'row']} spacing='24px'>
+                        <Tooltip hasArrow label={<FrontendSkills />}>
+                            <button>
+                                <span className="me-2">Frontend Development</span>
+                                <i className="fa-solid fa-circle-info"></i>
+                            </button>
+                        </Tooltip>
+                        <Tooltip hasArrow label={<BackendSkills />}>
+                            <button>
+                                <span className="me-2">Backend Development</span>
+                                <i className="fa-solid fa-circle-info"></i>
+                            </button>
+                        </Tooltip>
+                        <Tooltip hasArrow label={<TestingSkills />}>
+                            <button>
+                                <span className="me-2">Testing Tools</span>
+                                <i className="fa-solid fa-circle-info"></i>
+                            </button>
+                        </Tooltip>
+                        <Tooltip hasArrow label={<DesignSkills />}>
+                            <button>
+                                <span className="me-2">Design Tools</span>
+                                <i className="fa-solid fa-circle-info"></i>
+                            </button>
+                        </Tooltip>
+                    </Stack>
+                </div>
+                <div className='d-lg-none mt-4'>
+                    <Accordions accordions={mobileSkills} />
+                </div>
             </div>
             <div className="d-lg-flex justify-content-between">
                 <div className="about-photo-container mb-3 mb-0">
