@@ -69,7 +69,7 @@ export default function Home() {
                     >
                       <ProjectCard
                         title="Remote Job Board for JavaScript Developers"
-                        url="https://github.com/Jeffrey-A/remotejavascriptjobs#preview"
+                        url="https://github.com/jeffrey-almanzar/remotejavascriptjobs#preview"
                         leadText="Advanced remote job board that list JavaScript jobs, allowing the user to filter by employment type, development type, main technology, and salary estimation.  In addition, it allows employers to post job ads after making a payment through the integrated Stripe payment gateway."
                         features={[
                           'Fetches and displays jobs stored in a Firebase real-time database instance',
@@ -101,7 +101,7 @@ export default function Home() {
                     >
                       <ProjectCard
                         title="Goals Management App"
-                        url="https://github.com/Jeffrey-A/build-your-future-today#preview"
+                        url="https://github.com/jeffrey-almanzar/build-your-future-today#preview"
                         leadText="Multi-user goals management system that allows users to
                       create goals, create daily tasks for their goals, and
                       keep track of their progress."
@@ -135,7 +135,7 @@ export default function Home() {
                     >
                       <ProjectCard
                         title='Online Shopping Store for Women'
-                        url="https://github.com/Jeffrey-A/eCommerceProject#home"
+                        url="https://github.com/jeffrey-almanzar/eCommerceProject#home"
                         leadText='Full stack e-commerce with shopping cart functionality,
                       real payment handling and mobile friendly.'
                         features={[
@@ -163,7 +163,7 @@ export default function Home() {
                     >
                       <ProjectCard
                         title='City Search'
-                        url="https://github.com/Jeffrey-A/citySearch#preview"
+                        url="https://github.com/jeffrey-almanzar/citySearch#preview"
                         leadText='When given a city name, it fetches and displays all the
                       zip codes of the given city and displays information
                       about each zip code.'
@@ -194,7 +194,7 @@ export default function Home() {
           <a href="mailto:almanzarortizjeffrey@gmail.com" className="btn btn-hover btn-primary contact-cta">Get into
             my inbox</a>
           <div className="mt-4 social-media-container">
-            <a className="d-inline-block me-3" target="_blank" href="https://github.com/Jeffrey-A"><i
+            <a className="d-inline-block me-3" target="_blank" href="https://github.com/jeffrey-almanzar"><i
               className="fa-brands fa-github"></i></a>
             <a className="d-inline-block" target="_blank" href="https://www.linkedin.com/in/jeffrey-almanzar/"><i
               className="fa-brands fa-linkedin"></i></a>

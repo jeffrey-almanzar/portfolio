@@ -54,7 +54,7 @@ function Header(props) {
                         </li> */}
                         <li className='ps-2 nav-item nav-social-media-container'>
                             <div className="mt-4 mt-lg-0 social-media-container">
-                                <a className="d-inline-block me-3" target="_blank" href="https://github.com/Jeffrey-A"><i
+                                <a className="d-inline-block me-3" target="_blank" href="https://github.com/jeffrey-almanzar"><i
                                     className="fa-brands fa-github"></i></a>
                                 <a className="d-inline-block" target="_blank" href="https://www.linkedin.com/in/jeffrey-almanzar/"><i
                                     className="fa-brands fa-linkedin"></i></a>

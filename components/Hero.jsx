@@ -9,11 +9,10 @@ function Hero(props) {
                         <p>Hi, my name is</p>
                         <Heading mt={2} id="my-name" className="name"></Heading>
                         <Text fontSize='xl' className="mb-5 hero-description">
-                        I'm a results-driven Software Engineer with over 4 years of experience in web development, specializing in full-stack JavaScript. 
+                            I'm a senior Software Engineer with 5+ years of experience specialized in full-stack JavaScript development.
                         </Text>
                         <div>
-                            <Button colorScheme='brand' as='a' href="mailto:almanzarortizjeffrey@gmail.com" me={2}>Contact me</Button>
-                            <Button colorScheme='brand' as='a' href="JeffreyA_Resume.pdf" target='_blank' variant='outline'>Resume</Button>
+                            <Button colorScheme='brand' as='a' href="mailto:almanzarortizjeffrey@gmail.com" me={2}>Reach out</Button>
                         </div>
                     </div>
                 </div>
